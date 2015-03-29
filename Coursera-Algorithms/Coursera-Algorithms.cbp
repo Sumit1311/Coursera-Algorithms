@@ -32,7 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/graph.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/graph.cpp" />
+		<Unit filename="src/prims_algorithm_basic.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
