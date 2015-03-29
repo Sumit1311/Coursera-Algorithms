@@ -1,19 +1,32 @@
 #include "graph.h"
 #include <cstddef>
 #include <iostream>
+
 using namespace std;
 
-void Graph::create_graph(int number){
+node::node(){
+    value=-1;
+}
 
-    heads=new head_adjacency_list[number];
+node::node(int x){
+    value=x;
+}
+
+adjacent_node::adjacent_node(){
+    edge_value=0;
+    next=NULL;
+}
+
+Graph::Graph(int number){
+    heads=new adjacent_node[number];
     value=number;
     cout<<"Graph created ...."<<value<<endl;
 }
 int Graph::add(node x,node y){
-    cout<<"Adding edge"<<x.value<<" to "<<y.value<<endl;
+    cout<<"Adding edge : "<<x.value<<" to "<<y.value<<endl;
     struct adjacent_node *source=heads[x.value].head;
     if(heads[x.value].head ==NULL){
-        cout<<"adding first vertex "<<endl;
+        //cout<<"adding first vertex "<<endl;
         struct adjacent_node *temp=new adjacent_node();
         temp->n=x;
         temp->edge_value=0;
@@ -21,7 +34,7 @@ int Graph::add(node x,node y){
         heads[x.value].head=temp;
     }
     while(heads[x.value].head->next!=NULL){
-        cout<<"Searching end of list"<<endl;
+        //cout<<"Searching end of list"<<endl;
         heads[x.value].head=heads[x.value].head->next;
     }
     struct adjacent_node *temp=new adjacent_node();
@@ -29,7 +42,7 @@ int Graph::add(node x,node y){
     temp->edge_value=0;
     temp->next=NULL;
     heads[x.value].head->next=temp;
-    cout<<"Added edge"<<x.value<<" to "<<y.value<<endl;
+    cout<<"Added edge : "<<x.value<<" to "<<y.value<<endl;
     return 1;
 }
 
@@ -40,10 +53,11 @@ void Graph::print_graph(){
         if(source == NULL){
             continue;
         }
-        cout<<"source not null"<<endl;
+        //cout<<"source not null"<<endl;
         while(source != NULL){
-            cout<<source->n.value;
+            cout<<source->n.value<<" ";
             source=source->next;
         }
+        cout<<endl;
     }
 }
