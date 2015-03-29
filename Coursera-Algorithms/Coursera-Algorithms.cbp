@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,11 +32,27 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="include" />
 		</Compiler>
 		<Unit filename="include/graph.h" />
+		<Unit filename="include/prim.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="include/test/graphtest.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="include/test/primtest.h">
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="main.cpp" />
 		<Unit filename="src/graph.cpp" />
 		<Unit filename="src/prims_algorithm_basic.cpp" />
+		<Unit filename="test/graphtest.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="test/primtest.cpp">
+			<Option target="Debug" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />
