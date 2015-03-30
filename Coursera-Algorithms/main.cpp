@@ -3,8 +3,7 @@
 #include "test/primtest.h"
 using namespace std;
 
-int main()
-{
+int main() {
     cout << "Hello world!" << endl;
     run_graph_test();
     //run_prim_test();

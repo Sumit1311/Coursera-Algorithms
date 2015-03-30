@@ -2,18 +2,18 @@
 #ifndef GRAPH_H_INCLUDED
 #define GRAPH_H_INCLUDED
 class node {
-    public:
-        int value;
-        node();
-        node(int);
+public:
+    int value;
+    node();
+    node(int);
 };
 
 class adjacent_node {
-    public:
-        node n;
-        int edge_value;
-        adjacent_node* next;
-        adjacent_node();
+public:
+    node n;
+    int edge_value;
+    adjacent_node* next;
+    adjacent_node();
 };
 
 class Graph {
