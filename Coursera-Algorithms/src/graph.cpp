@@ -3,19 +3,41 @@
 #include <iostream>
 
 using namespace std;
+/** \brief Default constructor for initializing node class
+ *
+ *
+ */
 
 node::node() {
     value=-1;
 }
 
+/** \brief Single valued constructor with value being value for node
+ *
+ * \param x (int) : Value for the given node
+ *
+ */
+
+
 node::node(int x) {
     value=x;
 }
+
+/** \brief Default constructor for the [adj_node] class
+ *  [adj_node]: @ref adjacent_node "adjacent_node"
+ *
+ */
+
 
 adjacent_node::adjacent_node() {
     edge_value=0;
     next=NULL;
 }
+/** \brief Constructor for initializing the graph
+ *
+ * \param number (int) : no of vertices in the graph
+ *
+ */
 
 Graph::Graph(int number) {
     heads=new adjacent_node[number];
@@ -23,12 +45,30 @@ Graph::Graph(int number) {
     cout<<"Graph created .... With "<<value<<" nodes"<<endl;
 }
 
+/** \brief Method to add a node in the graph.
+ *
+ *   > Until the node added to graph no edge can exist with the node in the graph
+ * \param v (int) : Index of node to be added in the graph
+ * \return void
+ *
+ */
+
+
 void Graph::add_node(int v) {
     cout<<"Adding node : "<<v<<endl;
     heads[v].n=node(v);
     heads[v].edge_value=0;
     heads[v].next=NULL;
 }
+
+/** \brief Add edge to the graph
+ *
+ * \param source_node (int) :
+ * \param
+ * \return
+ *
+ */
+
 int Graph::add(int source_node,int dest_node) {
     node x(source_node),y(dest_node);
     cout<<"Adding edge : "<<x.value<<" to "<<y.value<<endl;

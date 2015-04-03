@@ -1,4 +1,9 @@
 #include "graph.h"
+/** \brief Method for testing graph api.
+ *
+ *
+ */
+
 void run_graph_test() {
     int NO_OF_VERTICES=10;
 
@@ -11,7 +16,7 @@ void run_graph_test() {
             g->add_edge(i,j);
             g->set_edge_value(i,j,i+j);
         }
+        g->remove_edge(0,9);
+        g->print_graph();
     }
-    g->remove_edge(0,9);
-    g->print_graph();
 }

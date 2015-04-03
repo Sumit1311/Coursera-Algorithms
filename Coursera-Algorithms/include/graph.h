@@ -3,22 +3,22 @@
 #define GRAPH_H_INCLUDED
 class node {
 public:
-    int value;
+    int value;/**< Value for the current vertex. Default is -1 */
     node();
     node(int);
 };
 
 class adjacent_node {
 public:
-    node n;
-    int edge_value;
-    adjacent_node* next;
+    node n; /**< Node class reference for current vertex */
+    int edge_value; /**< Edge length */
+    adjacent_node* next; /**< Reference to next node in the list */
     adjacent_node();
 };
 
 class Graph {
-    adjacent_node *heads;
-    int value;
+    adjacent_node *heads; /**< For storing adjacency list of each vertex */
+    int value; /**< No of vertices in graph */
     int add(int,int);
     int remove(int,int);
     void set_edge(int,int,int);
