@@ -1,45 +1,40 @@
 #include <cstddef>
 #ifndef GRAPH_H_INCLUDED
 #define GRAPH_H_INCLUDED
-struct node{
-    int value;
-    node(){
-        value=0;
-    }
-    node(int x){
-        value=x;
-    }
+class node {
+public:
+    int value;/**< Value for the current vertex. Default is -1 */
+    node();
+    node(int);
 };
 
-struct adjacent_node{
-    node n;
-    int edge_value;
-    struct adjacent_node* next;
+class adjacent_node {
+public:
+    node n; /**< Node class reference for current vertex */
+    int edge_value; /**< Edge length */
+    adjacent_node* next; /**< Reference to next node in the list */
+    adjacent_node();
 };
 
-struct head_adjacency_list{
-    struct adjacent_node *head;
-    head_adjacency_list(){
-        head=NULL;
-    }
+class Graph {
+    adjacent_node *heads; /**< For storing adjacency list of each vertex */
+    int value; /**< No of vertices in graph */
+    int add(int,int);
+    int remove(int,int);
+    void set_edge(int,int,int);
+public:
+    Graph(int);
+    bool isAdjacent(int,int);
+    int* neighbors(int,int);
+    void add_node(int);
+    int add_edge(int,int);
+    int remove_edge(int,int);
+    int get_node_value(int);
+    void set_node_value(int,int);
+    int get_edge_value(int,int);
+    void set_edge_value(int,int,int);
+    void print_graph();
 };
-class Graph{
-        struct head_adjacency_list *heads;
-        int value;
-    public:
-        void create_graph(int);
-        int isAdjacent(node,node);
-        node* neighbors(node);
-        int add(node,node);
-        int removeEdge(node,node);
-        int get_node_value(node);
-        void set_node_value(node,int);
-        int get_edge_value(node,node);
-        void set_edge_value(node,node,int);
-        void print_graph();
-};
-
-
 
 
 #endif // GRAPH_H_INCLUDED
