@@ -1,17 +1,21 @@
 # depslib dependency file v1.0
-1427566618 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/main.cpp
+1428168143 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/main.cpp
 	<iostream>
-	"graph.h"
+	"test/graphtest.h"
+	"test/primtest.h"
 
-1427567326 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp
+1428168128 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp
 	"graph.h"
 	<cstddef>
 	<iostream>
 
-1427566884 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/graph.h
+1428165697 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/graph.h
 	<cstddef>
 
-1427563775 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/prims_algorithm_basic.cpp
+1428168919 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/prims_algorithm_basic.cpp
+	"graph.h"
+	"utils.h"
+	<iostream>
 
 1427625943 source:/home/geek/Documents/workplace/Coursera-Algorithms/Coursera-Algorithms/main.cpp
 	<iostream>
@@ -40,4 +44,22 @@
 	"prim.h"
 
 1427624920 /home/geek/Documents/workplace/Coursera-Algorithms/Coursera-Algorithms/include/prim.h
+
+1428150855 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/test/graphtest.h
+
+1428150855 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/test/primtest.h
+
+1428150855 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/test/graphtest.cpp
+	"graph.h"
+
+1428150855 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/test/primtest.cpp
+	"prim.h"
+
+1428150855 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/prim.h
+
+1428168881 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
+
+1428169130 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
+	"utils.h"
+	<iostream>
 

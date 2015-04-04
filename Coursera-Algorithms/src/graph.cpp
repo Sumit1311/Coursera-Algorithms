@@ -63,13 +63,13 @@ void Graph::add_node(int v) {
 
 /** \brief Add edge to the graph
  *
- * \param source_node (int) :
- * \param
- * \return
+ * \param source_node (int) : source node of the edge
+ * \param dest_node (int) : destination node of the edge
+ *
  *
  */
 
-int Graph::add(int source_node,int dest_node) {
+void Graph::add(int source_node,int dest_node) {
     node x(source_node),y(dest_node);
     cout<<"Adding edge : "<<x.value<<" to "<<y.value<<endl;
     adjacent_node *temp=new adjacent_node();
@@ -79,9 +79,9 @@ int Graph::add(int source_node,int dest_node) {
     adjacent_node *source=heads[x.value].next;
     if(source == NULL) {
         heads[x.value].next=temp;
-        return 1;
+        return;
     }
-
+    cout<<"Searching end of list"<<endl;
     while(source -> next!=NULL) {
         //cout<<"Searching end of list"<<endl;
         source=source->next;
@@ -89,14 +89,26 @@ int Graph::add(int source_node,int dest_node) {
 
     source->next=temp;
     cout<<"Added edge : "<<x.value<<" to "<<y.value<<endl;
-    return 1;
 }
 
-int Graph::add_edge(int source,int dest) {
+/** \brief Method to add edge in undirected graph
+ *
+ * \param source (int) : source vertex index
+ * \param dest (int) : destination vertex index
+ *
+ */
+
+
+void Graph::add_edge(int source,int dest) {
     add(source,dest);
     add(dest,source);
-    return 1;
 }
+
+/** \brief Print adjacency list for each vertex of graph
+ *
+ *
+ */
+
 
 void Graph::print_graph() {
     for(int i=0; i<value; i++) {
@@ -116,7 +128,15 @@ void Graph::print_graph() {
     }
 }
 
-int Graph::remove(int source,int dest) {
+/** \brief Remove the edge from source to destination
+ *
+ * \param source (int) :  Index of source vertex
+ * \param dest (int) : Index of destination vertex
+ *
+ */
+
+
+void Graph::remove(int source,int dest) {
     adjacent_node *source_node=&heads[source];
     cout<<"Searching for node : "<<dest<<endl;
     while(source_node!=NULL) {
@@ -139,15 +159,39 @@ int Graph::remove(int source,int dest) {
     }
 }
 
-int Graph::remove_edge(int source,int dest) {
+/** \brief Remove the specified edge in undirected graph
+ *
+ *  \param source (int) :  Index of source vertex
+ *  \param dest (int) : Index of destination vertex
+ *
+ */
+
+
+void Graph::remove_edge(int source,int dest) {
     remove(source,dest);
     remove(dest,source);
 }
+
+/** \brief Set edge length for source and destination in undirected graph
+ *
+ * \param source (int) :  Index of source vertex
+ * \param dest (int) : Index of destination vertex
+ *
+ */
+
 
 void Graph::set_edge_value(int source,int destination,int v) {
     set_edge(source,destination,v);
     set_edge(destination,source,v);
 }
+
+/** \brief set edge length of given edge
+ *
+ *  \param source (int) :  Index of source vertex
+ *  \param dest (int) : Index of destination vertex
+ *
+ */
+
 
 void Graph::set_edge(int s,int d,int v) {
     adjacent_node *source_node=&heads[s];
@@ -161,6 +205,13 @@ void Graph::set_edge(int s,int d,int v) {
     }
 }
 
+/** \brief Return edge length of given edge
+ *
+ * \param source (int) :  Index of source vertex
+ * \param dest (int) : Index of destination vertex
+ */
+
+
 int Graph::get_edge_value(int source,int dest) {
     adjacent_node *source_node=&heads[source];
     while(source_node !=NULL && source_node->n.value != dest) {
@@ -171,15 +222,42 @@ int Graph::get_edge_value(int source,int dest) {
     } else {
         return source_node->edge_value;
     }
+    return -1;
 }
+
+/** \brief Return value of node with given index
+ *
+ * \param n (int) : node index
+ * \return (int) : value of node
+ *
+ */
+
 
 int Graph::get_node_value(int n) {
     return heads[n].n.value;
 }
 
+/** \brief Set value of node for given index
+ *
+ * \param n (int) : index of given vertex
+ * \param v(int) : value to be set for given index
+ *
+ */
+
+
 void Graph::set_node_value(int n,int v) {
     heads[n].n.value=v;
 }
+
+/** \brief Check whether given 2 vertex are adjacent
+ *
+ * \param v1 (int) : 1st vertex
+ * \param v2 (int) : 2nd vertex
+ * \return (bool) : 0 if not adjacent
+                    1 if adjacent
+ *
+ */
+
 
 bool Graph::isAdjacent(int v1,int v2) {
     adjacent_node *source=&heads[v1];
@@ -192,13 +270,21 @@ bool Graph::isAdjacent(int v1,int v2) {
     return 0;
 }
 
-int* Graph::neighbors(int v1,int n) {
-    int temp[n],count=0;
+/** \brief Return the list of adjacent nodes
+ *
+ * \param v1 (int) : vertex index
+ * \param v2 (int) : max no of neighbors to be returned
+ * \return (int *[2]) : array of the adjacent vertices along with edge lengths.
+ *
+ */
+
+
+void Graph::neighbors(int temp[],int v1,int n) {
+    int count=0;
     adjacent_node *start=heads[v1].next;
     while(start != NULL) {
-        temp[count++]=start->n.value;
+        temp[count]=start->edge_value;
+        count++;
         start=start->next;
     }
-    return temp;
-
 }

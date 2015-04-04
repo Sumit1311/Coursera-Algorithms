@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     cout << "Hello world!" << endl;
-    run_graph_test();
-    //run_prim_test();
+    //run_graph_test();
+    run_prim_test();
     return 0;
 }

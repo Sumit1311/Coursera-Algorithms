@@ -19,16 +19,16 @@ public:
 class Graph {
     adjacent_node *heads; /**< For storing adjacency list of each vertex */
     int value; /**< No of vertices in graph */
-    int add(int,int);
-    int remove(int,int);
+    void add(int,int);
+    void remove(int,int);
     void set_edge(int,int,int);
 public:
     Graph(int);
     bool isAdjacent(int,int);
-    int* neighbors(int,int);
+    void neighbors(int [],int,int);
     void add_node(int);
-    int add_edge(int,int);
-    int remove_edge(int,int);
+    void add_edge(int,int);
+    void remove_edge(int,int);
     int get_node_value(int);
     void set_node_value(int,int);
     int get_edge_value(int,int);

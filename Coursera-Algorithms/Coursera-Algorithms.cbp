@@ -44,9 +44,11 @@
 		<Unit filename="include/test/primtest.h">
 			<Option target="Debug" />
 		</Unit>
+		<Unit filename="include/utils.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/graph.cpp" />
 		<Unit filename="src/prims_algorithm_basic.cpp" />
+		<Unit filename="src/util.cpp" />
 		<Unit filename="test/graphtest.cpp">
 			<Option target="Debug" />
 		</Unit>
