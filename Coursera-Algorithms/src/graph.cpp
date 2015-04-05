@@ -42,7 +42,7 @@ adjacent_node::adjacent_node() {
 Graph::Graph(int number) {
     heads=new adjacent_node[number];
     value=number;
-    cout<<"Graph created .... With "<<value<<" nodes"<<endl;
+    //cout<<"Graph created .... With "<<value<<" nodes"<<endl;
 }
 
 /** \brief Method to add a node in the graph.
@@ -55,7 +55,7 @@ Graph::Graph(int number) {
 
 
 void Graph::add_node(int v) {
-    cout<<"Adding node : "<<v<<endl;
+    //cout<<"Adding node : "<<v<<endl;
     heads[v].n=node(v);
     heads[v].edge_value=0;
     heads[v].next=NULL;
@@ -71,7 +71,7 @@ void Graph::add_node(int v) {
 
 void Graph::add(int source_node,int dest_node) {
     node x(source_node),y(dest_node);
-    cout<<"Adding edge : "<<x.value<<" to "<<y.value<<endl;
+    //cout<<"Adding edge : "<<x.value<<" to "<<y.value<<endl;
     adjacent_node *temp=new adjacent_node();
     temp->n=y;
     temp->edge_value=0;
@@ -81,14 +81,14 @@ void Graph::add(int source_node,int dest_node) {
         heads[x.value].next=temp;
         return;
     }
-    cout<<"Searching end of list"<<endl;
+    //cout<<"Searching end of list"<<endl;
     while(source -> next!=NULL) {
         //cout<<"Searching end of list"<<endl;
         source=source->next;
     }
 
     source->next=temp;
-    cout<<"Added edge : "<<x.value<<" to "<<y.value<<endl;
+    //cout<<"Added edge : "<<x.value<<" to "<<y.value<<endl;
 }
 
 /** \brief Method to add edge in undirected graph
@@ -283,7 +283,7 @@ void Graph::neighbors(int temp[],int v1,int n) {
     int count=0;
     adjacent_node *start=heads[v1].next;
     while(start != NULL) {
-        temp[count]=start->edge_value;
+        temp[start->n.value]=start->edge_value;
         count++;
         start=start->next;
     }

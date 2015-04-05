@@ -23,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -34,7 +35,11 @@
 			<Add option="-fexceptions" />
 			<Add directory="include" />
 		</Compiler>
+		<Unit filename="include/JobSchedulingTest.h" />
 		<Unit filename="include/graph.h" />
+		<Unit filename="include/job_scheduling.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="include/prim.h">
 			<Option target="Debug" />
 		</Unit>
@@ -47,8 +52,10 @@
 		<Unit filename="include/utils.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/graph.cpp" />
+		<Unit filename="src/job_scheduling.cpp" />
 		<Unit filename="src/prims_algorithm_basic.cpp" />
 		<Unit filename="src/util.cpp" />
+		<Unit filename="test/JobSchedulingTest.cpp" />
 		<Unit filename="test/graphtest.cpp">
 			<Option target="Debug" />
 		</Unit>

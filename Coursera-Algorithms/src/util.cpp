@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -9,4 +10,6 @@ void print_array(int arr[],int n){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
+
 }
+

@@ -1,3 +1,4 @@
+#include "graph.h"
 #ifndef PRIM_H_INCLUDED
 #define PRIM_H_INCLUDED
 
