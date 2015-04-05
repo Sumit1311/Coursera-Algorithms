@@ -10,7 +10,7 @@ JobSchedulingTest::JobSchedulingTest(char* filename) {
     no_of_jobs=read_length();
     jobs=new int*[no_of_jobs];
     for(int i=0;i<no_of_jobs;i++){
-        jobs[i]=new int[3];
+        jobs[i]=new int[4];
     }
 }
 
