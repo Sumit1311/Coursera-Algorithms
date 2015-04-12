@@ -33,6 +33,12 @@ adjacent_node::adjacent_node() {
     edge_value=0;
     next=NULL;
 }
+
+Graph::Graph(int n){
+    heads=new adjacent_node[n];
+    value=n;
+}
+
 /** \brief Constructor for initializing the graph
  *
  * \param number (int) : no of vertices in the graph
@@ -43,7 +49,7 @@ Graph::Graph(int number,int edges) {
     heads=new adjacent_node[number];
     value=number;
     no_of_edges=edges;
-    //cout<<"Graph created .... With "<<value<<" nodes"<<endl;
+    cout<<"Graph created .... With "<<value<<" nodes"<<endl;
 }
 
 /** \brief Method to add a node in the graph.
@@ -56,7 +62,7 @@ Graph::Graph(int number,int edges) {
 
 
 void Graph::add_node(int v) {
-    //cout<<"Adding node : "<<v<<endl;
+    cout<<"Adding node : "<<v<<endl;
     heads[v].n=node(v);
     heads[v].edge_value=0;
     heads[v].next=NULL;
@@ -102,7 +108,7 @@ void Graph::add(int source_node,int dest_node) {
 
 void Graph::add_edge(int source,int dest) {
     add(source,dest);
-    add(dest,source);
+    //add(dest,source);
 }
 
 /** \brief Print adjacency list for each vertex of graph
@@ -170,7 +176,7 @@ void Graph::remove(int source,int dest) {
 
 void Graph::remove_edge(int source,int dest) {
     remove(source,dest);
-    remove(dest,source);
+    //remove(dest,source);
 }
 
 /** \brief Set edge length for source and destination in undirected graph
@@ -183,7 +189,7 @@ void Graph::remove_edge(int source,int dest) {
 
 void Graph::set_edge_value(int source,int destination,int v) {
     set_edge(source,destination,v);
-    set_edge(destination,source,v);
+    //set_edge(destination,source,v);
 }
 
 /** \brief set edge length of given edge
@@ -292,6 +298,7 @@ void Graph::neighbors(int temp[],int v1,int n) {
 
 void Graph::get_all_edges(int **edges)
 {
+    int count=0;
     for(int i=0; i<value; i++) {
         if(heads[i].n.value==-1) {
             continue;
@@ -300,12 +307,15 @@ void Graph::get_all_edges(int **edges)
         if(source == NULL) {
             continue;
         }
-        //cout<<"source not null"<<endl;
+
+        //cout<<"source not null"<<source->n.value<<endl;
         while(source != NULL) {
-            edges[i][0]=i;
-            edges[i][1]=source->n.value;
-            edges[i][2]=source->edge_value;
+            edges[count][0]=i;
+            edges[count][1]=source->n.value;
+            edges[count][2]=source->edge_value;
+            //cout<<"Edge Value :"<<edges[count][2]<<endl;
             source=source->next;
+            count++;
         }
     }
 

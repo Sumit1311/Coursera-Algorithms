@@ -9,7 +9,7 @@ class Graph_Clustering: protected Graph
     void Sort_By_Edge_Lengths();
     public:
         /** Default constructor */
-        Graph_Clustering(int);
+        Graph_Clustering(int,int);
         void Start_Clustering(int);
         void Create_Graph(int **);
 

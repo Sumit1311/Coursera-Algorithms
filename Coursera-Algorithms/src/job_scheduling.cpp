@@ -9,10 +9,6 @@ using namespace std;
 int compare(const void *a,const void *b){
     int **aint=(int **)a;
     int **bint=(int **)b;
-    //aint=*a;
-    //bint=*b;
-    //aint=*a;
-    //cout<<"first1 : "<<aint[0][0]<<" second : "<<bint[0][0]<<endl;
     if(aint[0][2] > bint[0][2])
         return -1;
     if(aint[0][2] == bint[0][2]){

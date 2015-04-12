@@ -25,6 +25,7 @@ class Graph {
     void set_edge(int,int,int);
 public:
     Graph(int);
+    Graph(int,int);
     bool isAdjacent(int,int);
     void neighbors(int [],int,int);
     void add_node(int);
