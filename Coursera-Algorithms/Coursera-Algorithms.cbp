@@ -35,6 +35,7 @@
 			<Add option="-fexceptions" />
 			<Add directory="include" />
 		</Compiler>
+		<Unit filename="include/Graph_Clustering.h" />
 		<Unit filename="include/JobSchedulingTest.h" />
 		<Unit filename="include/graph.h" />
 		<Unit filename="include/job_scheduling.h">
@@ -51,6 +52,8 @@
 		</Unit>
 		<Unit filename="include/utils.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Graph_Clustering.cpp" />
+		<Unit filename="src/clustering.cpp" />
 		<Unit filename="src/graph.cpp" />
 		<Unit filename="src/job_scheduling.cpp" />
 		<Unit filename="src/prims_algorithm_basic.cpp" />

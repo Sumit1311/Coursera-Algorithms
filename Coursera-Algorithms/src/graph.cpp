@@ -39,9 +39,10 @@ adjacent_node::adjacent_node() {
  *
  */
 
-Graph::Graph(int number) {
+Graph::Graph(int number,int edges) {
     heads=new adjacent_node[number];
     value=number;
+    no_of_edges=edges;
     //cout<<"Graph created .... With "<<value<<" nodes"<<endl;
 }
 
@@ -288,3 +289,25 @@ void Graph::neighbors(int temp[],int v1,int n) {
         start=start->next;
     }
 }
+
+void Graph::get_all_edges(int **edges)
+{
+    for(int i=0; i<value; i++) {
+        if(heads[i].n.value==-1) {
+            continue;
+        }
+        adjacent_node *source=heads[i].next;
+        if(source == NULL) {
+            continue;
+        }
+        //cout<<"source not null"<<endl;
+        while(source != NULL) {
+            edges[i][0]=i;
+            edges[i][1]=source->n.value;
+            edges[i][2]=source->edge_value;
+            source=source->next;
+        }
+    }
+
+}
+

@@ -18,7 +18,8 @@ public:
 
 class Graph {
     adjacent_node *heads; /**< For storing adjacency list of each vertex */
-    int value; /**< No of vertices in graph */
+    int value;/**< No of vertices in graph */
+    int no_of_edges;
     void add(int,int);
     void remove(int,int);
     void set_edge(int,int,int);
@@ -34,6 +35,7 @@ public:
     int get_edge_value(int,int);
     void set_edge_value(int,int,int);
     void print_graph();
+    void get_all_edges(int **);
 };
 
 
