@@ -12,12 +12,12 @@ Graph g(NO_OF_VERTICES);
 Graph min_span_tree(NO_OF_VERTICES);
 bool explored[NO_OF_VERTICES];
 
-void read_data_from_file(char * file_name, int content[][3]){
+void read_data_from_file(char * file_name, int content[][3]) {
     fstream file(file_name);
     int a,b,c;
     file>>a>>b;
     int count=0;
-    while(file>>a>>b>>c){
+    while(file>>a>>b>>c) {
         content[count][0]=a;
         content[count][1]=b;
         content[count][2]=c;
@@ -26,28 +26,28 @@ void read_data_from_file(char * file_name, int content[][3]){
 
 }
 
-bool all_explored(){
+bool all_explored() {
     bool temp=explored[0];
-    for(int i=0;i<NO_OF_VERTICES;i++){
+    for(int i=0; i<NO_OF_VERTICES; i++) {
         temp=temp && explored[i];
     }
     return temp;
 }
 
-void select_minimum_edge(int i,int temp[][2]){
-    int neighbor_edges[NO_OF_VERTICES]={-1};
+void select_minimum_edge(int i,int temp[][2]) {
+    int neighbor_edges[NO_OF_VERTICES]= {-1};
     g.neighbors(neighbor_edges,i,NO_OF_VERTICES);
     //print_array(neighbor_edges,NO_OF_VERTICES);
-    int min[1][2]={0,10000};
-    for(int k=0;k<NO_OF_VERTICES;k++){
-        if(explored[k]==true){
+    int min[1][2]= {0,10000};
+    for(int k=0; k<NO_OF_VERTICES; k++) {
+        if(explored[k]==true) {
             continue;
         }
         if(neighbor_edges[k] == 0)
             continue;
         if(k==i)
             continue;
-        if(min[0][1] > neighbor_edges[k]){
+        if(min[0][1] > neighbor_edges[k]) {
             min[0][1]=neighbor_edges[k];
             min[0][0]=k;
         }
@@ -70,7 +70,7 @@ void prims_algorithm() {
         explored[i]=false;
     }
 
-    for(int i=0;i<NO_OF_EDGES;i++){
+    for(int i=0; i<NO_OF_EDGES; i++) {
         g.add_edge(data[i][0]-1,data[i][1]-1);
         g.set_edge_value(data[i][0]-1,data[i][1]-1,data[i][2]);
     }
@@ -92,15 +92,15 @@ void prims_algorithm() {
     min_span_tree.add_node(0);
     explored[0]=true;
     int count=0;
-    while(!all_explored()){
-        int min[1][2]={0,10000},ind=-1;
-        for(int i=0;i<NO_OF_VERTICES;i++){
-            if(explored[i] == true){
-                int temp[1][2]={0,10000};
+    while(!all_explored()) {
+        int min[1][2]= {0,10000},ind=-1;
+        for(int i=0; i<NO_OF_VERTICES; i++) {
+            if(explored[i] == true) {
+                int temp[1][2]= {0,10000};
                 //cout<<"Selecting the min edge ....";
                 select_minimum_edge(i,temp);
                 //cout<<"Selected Edge : "<<i<<" "<<temp[0][0]<<endl;
-                if(temp[0][1]<min[0][1]){
+                if(temp[0][1]<min[0][1]) {
                     min[0][0]=temp[0][0];
                     min[0][1]=temp[0][1];
                     ind=i;
@@ -108,7 +108,7 @@ void prims_algorithm() {
             }
         }
         //cout<<"Final Selected Edge : "<<ind<<" "<<min[0][0]<<endl;
-        if(ind!=-1){
+        if(ind!=-1) {
             explored[min[0][0]]=true;
             min_span_tree.add_node(min[0][0]);
             min_span_tree.add_edge(ind,min[0][0]);

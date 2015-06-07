@@ -16,7 +16,7 @@ int main() {
     Graph_Clustering clustering=Graph_Clustering(4,5);
     int **graph;
     graph=new int*[5];
-    for(int i=0;i<5;i++){
+    for(int i=0; i<5; i++) {
         graph[i]=new int[3];
     }
     graph[0][0]=0;

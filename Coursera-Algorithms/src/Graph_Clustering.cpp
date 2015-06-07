@@ -12,7 +12,7 @@ Graph_Clustering::Graph_Clustering(int n,int e):Graph(n,e) {
     cout<<"No of edges : "<<e<<endl;
 }
 
-int compare1(const void *a,const void *b){
+int compare1(const void *a,const void *b) {
     int **aint=(int **)a;
     int **bint=(int **)b;
     //aint=*a;
@@ -21,8 +21,8 @@ int compare1(const void *a,const void *b){
     cout<<"first1 : "<<aint[0][2]<<" second : "<<bint[0][2]<<endl;
     if(aint[0][2] < bint[0][2])
         return -1;
-    if(aint[0][2] == bint[0][2]){
-            return 0;
+    if(aint[0][2] == bint[0][2]) {
+        return 0;
     }
     if(aint[0][2] > bint[0][2])
         return 1;
@@ -32,7 +32,7 @@ int compare1(const void *a,const void *b){
 void Graph_Clustering::Start_Clustering(int clusters) {
     int **sorted_edges;
     sorted_edges=new int*[no_of_edges];
-    for(int i=0;i<no_of_edges;i++){
+    for(int i=0; i<no_of_edges; i++) {
         sorted_edges[i]=new int[3];
     }
     cout<<"Get All Edges :"<<endl;
@@ -41,11 +41,11 @@ void Graph_Clustering::Start_Clustering(int clusters) {
     qsort(sorted_edges,no_of_edges,sizeof(sorted_edges[0]),compare1);
     print_2d_array(sorted_edges,no_of_edges,3);
     int cluster[no_of_nodes];
-    for(int i=0;i<no_of_nodes;i++){
+    for(int i=0; i<no_of_nodes; i++) {
         cluster[i]=i;
     }
     int current_clusters=no_of_nodes,count=0;
-    while(current_clusters != clusters){
+    while(current_clusters != clusters) {
         cluster[sorted_edges[count][1]]=sorted_edges[count][0];
         count++;
         current_clusters--;

@@ -9,14 +9,14 @@ JobSchedulingTest::JobSchedulingTest(char* filename) {
     file_stream.open(filename);
     no_of_jobs=read_length();
     jobs=new int*[no_of_jobs];
-    for(int i=0;i<no_of_jobs;i++){
+    for(int i=0; i<no_of_jobs; i++) {
         jobs[i]=new int[4];
     }
 }
 
 void JobSchedulingTest::read_data_from_file() {
     int a,b,count=0;
-    while(file_stream>>a>>b){
+    while(file_stream>>a>>b) {
         jobs[count][0]=a;
         jobs[count][1]=b;
         count++;
@@ -24,7 +24,7 @@ void JobSchedulingTest::read_data_from_file() {
 }
 
 JobSchedulingTest::~JobSchedulingTest() {
-    for(int i=0;i<no_of_jobs;i++){
+    for(int i=0; i<no_of_jobs; i++) {
         delete jobs[i];
     }
     delete[] jobs;

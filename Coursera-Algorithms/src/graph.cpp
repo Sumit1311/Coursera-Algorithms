@@ -7,7 +7,6 @@ using namespace std;
  *
  *
  */
-
 node::node() {
     value=-1;
 }
@@ -19,6 +18,10 @@ node::node() {
  */
 
 
+/**
+ * [node description]
+ * @type {[int]}
+ */
 node::node(int x) {
     value=x;
 }
@@ -34,7 +37,7 @@ adjacent_node::adjacent_node() {
     next=NULL;
 }
 
-Graph::Graph(int n){
+Graph::Graph(int n) {
     heads=new adjacent_node[n];
     value=n;
 }
@@ -296,8 +299,7 @@ void Graph::neighbors(int temp[],int v1,int n) {
     }
 }
 
-void Graph::get_all_edges(int **edges)
-{
+void Graph::get_all_edges(int **edges) {
     int count=0;
     for(int i=0; i<value; i++) {
         if(heads[i].n.value==-1) {
@@ -320,4 +322,3 @@ void Graph::get_all_edges(int **edges)
     }
 
 }
-
