@@ -40,7 +40,6 @@ void HuffmanCode::generateTree() {
 }
 
 tree_pairs HuffmanCode::mergeTwoSymbols(tree_pairs first,tree_pairs second) {
-
     return tree_pairs();
 }
 
