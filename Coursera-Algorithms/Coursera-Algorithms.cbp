@@ -5,6 +5,7 @@
 		<Option title="Coursera-Algorithms" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="src/;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/Coursera-Algorithms" prefix_auto="1" extension_auto="1" />
@@ -12,6 +13,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
@@ -38,30 +40,33 @@
 		<Unit filename="include/Graph_Clustering.h" />
 		<Unit filename="include/JobSchedulingTest.h" />
 		<Unit filename="include/graph.h" />
-		<Unit filename="include/job_scheduling.h">
+		<Unit filename="include/huffman_code.h" />
+		<Unit filename="include/job_scheduling.h" />
+		<Unit filename="include/prim.h" />
+		<Unit filename="include/simple_tree.hpp" />
+		<Unit filename="include/test/graphtest.h" />
+		<Unit filename="include/test/huffman_test.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="include/prim.h">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="include/test/graphtest.h">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="include/test/primtest.h">
-			<Option target="Debug" />
-		</Unit>
+		<Unit filename="include/test/primtest.h" />
+		<Unit filename="include/tree.hh" />
+		<Unit filename="include/tree_util.hh" />
+		<Unit filename="include/util.h" />
 		<Unit filename="include/utils.h" />
+		<Unit filename="include/xinlin.hh" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Graph_Clustering.cpp" />
-		<Unit filename="src/clustering.cpp" />
 		<Unit filename="src/graph.cpp" />
+		<Unit filename="src/huffman_code.cpp" />
 		<Unit filename="src/job_scheduling.cpp" />
 		<Unit filename="src/prims_algorithm_basic.cpp" />
 		<Unit filename="src/util.cpp" />
 		<Unit filename="test/JobSchedulingTest.cpp" />
 		<Unit filename="test/graphtest.cpp">
+			<Option virtualFolder="src/" />
 			<Option target="Debug" />
 		</Unit>
+		<Unit filename="test/huffman_code_test.cpp" />
 		<Unit filename="test/primtest.cpp">
 			<Option target="Debug" />
 		</Unit>

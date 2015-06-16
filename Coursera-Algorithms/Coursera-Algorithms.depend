@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
-1428861946 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/main.cpp
+1433733072 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/main.cpp
 	<iostream>
 	"test/graphtest.h"
 	"test/primtest.h"
 	"utils.h"
 	"JobSchedulingTest.h"
 	"Graph_Clustering.h"
+	"test/huffman_test.h"
 
-1428861821 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp
+1433655052 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp
 	"graph.h"
 	<cstddef>
 	<iostream>
@@ -15,7 +16,7 @@
 1428857202 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/graph.h
 	<cstddef>
 
-1428228400 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/prims_algorithm_basic.cpp
+1433655049 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/prims_algorithm_basic.cpp
 	"graph.h"
 	"prim.h"
 	"utils.h"
@@ -65,35 +66,68 @@
 
 1428236430 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
 
-1428236582 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
+1433655051 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
 	"utils.h"
 	<iostream>
 	<fstream>
 
-1428235733 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/test/JobSchedulingTest.cpp
+1433655054 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/test/JobSchedulingTest.cpp
 	"JobSchedulingTest.h"
 	"job_scheduling.h"
 
-1428232530 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/JobSchedulingTest.h
+1433655053 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/JobSchedulingTest.h
 	<fstream>
 
 1428231580 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/job_scheduling.h
 
-1428857322 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/job_scheduling.cpp
+1433655053 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/job_scheduling.cpp
 	<iostream>
 	<fstream>
 	<cstdlib>
 	"utils.h"
 	<typeinfo>
 
-1428857068 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/Graph_Clustering.h
+1433655050 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/Graph_Clustering.h
 	"graph.h"
 
 1428826236 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/clustering.cpp
 
-1428861139 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/Graph_Clustering.cpp
+1433655050 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/Graph_Clustering.cpp
 	"Graph_Clustering.h"
 	<cstdlib>
 	"utils.h"
 	<iostream>
+
+1433770788 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/test/huffman_code_test.cpp
+	"huffman_code.h"
+	<vector>
+
+1433765908 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/huffman_code.h
+	<map>
+	<string>
+	<vector>
+	<utility>
+	"tree.hh"
+
+1433739240 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+	<iostream>
+	<cassert>
+	<memory>
+	<stdexcept>
+	<iterator>
+	<set>
+	<queue>
+	<algorithm>
+	<cstddef>
+
+1433732479 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/test/huffman_test.h
+
+1433766564 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp
+	<iostream>
+	<huffman_code.h>
+	<algorithm>
+
+1431029833 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/tree_util.hh
+	<iostream>
+	"tree.hh"
 

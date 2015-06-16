@@ -5,25 +5,31 @@
 #include<string>
 #include<vector>
 #include<utility>
-#include "xinlin.hh"
+#include "tree.hh"
 
 using namespace std;
 typedef pair<string,int> sym_freq;
-typedef tree<sym_freq> tree_pairs;
-typedef vector<tree_pairs> map_symbols;
-
-struct ComparePairs {
-// TODO (geek#1#): Make it public
-    bool  operator()(const tree_pairs&,const tree_pairs&);
+struct Node{
+    sym_freq data;
+    Node *left_child;
+    Node *right_child;
 };
+typedef struct Node Pairs;
+typedef vector<Pairs*> map_symbols;
+
+
 class HuffmanCode {
 private :
     //stores name of symbols and their frequencies
     map_symbols symbols;
-    map<string,string> binary_codes;
-    tree_pairs mergeTwoSymbols(tree_pairs,tree_pairs);
+    Pairs* mergeTwoSymbols(Pairs*,Pairs*);
+    vector<pair<string,string>> binary_codes;
     void generateTree();
 public :
     HuffmanCode(vector<string>,vector<int>);
     void generateBinaryCodes();
+    void print_progress();
+    void postOrderTree(Pairs *root);
+    void print_node(Pairs*);
+    void insertCodes(Pairs*,string);
 };

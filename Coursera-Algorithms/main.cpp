@@ -4,16 +4,18 @@
 #include "utils.h"
 #include "JobSchedulingTest.h"
 #include "Graph_Clustering.h"
+#include "test/huffman_test.h"
 
 using namespace std;
 
 int main() {
     cout << "Hello world!" << endl;
+    huffman_code_test();
     //run_graph_test();
     //run_prim_test();
     //JobSchedulingTest schedule_test("input/min_weighted_sum_of_jobs1.txt");
     //cout<<"Completion time : "<<schedule_test.run_test();
-    Graph_Clustering clustering=Graph_Clustering(4,5);
+    /*Graph_Clustering clustering=Graph_Clustering(4,5);
     int **graph;
     graph=new int*[5];
     for(int i=0; i<5; i++) {
@@ -33,9 +35,9 @@ int main() {
     graph[3][2]=2;
     graph[4][0]=2;
     graph[4][1]=3;
-    graph[4][2]=4;
+    graph[4][2]=4;*/
     //cout<<"Calling create graph";
-    clustering.Create_Graph(graph);
-    clustering.Start_Clustering(2);
+//    clustering.Create_Graph(graph);
+//    clustering.Start_Clustering(2);
     return 0;
 }
