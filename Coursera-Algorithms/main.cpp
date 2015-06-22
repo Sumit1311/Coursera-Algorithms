@@ -5,12 +5,14 @@
 #include "JobSchedulingTest.h"
 #include "Graph_Clustering.h"
 #include "test/huffman_test.h"
+#include "test/unionFind.h"
 
 using namespace std;
 
 int main() {
     cout << "Hello world!" << endl;
-    huffman_code_test();
+    run_union_find();
+    //huffman_code_test();
     //run_graph_test();
     //run_prim_test();
     //JobSchedulingTest schedule_test("input/min_weighted_sum_of_jobs1.txt");

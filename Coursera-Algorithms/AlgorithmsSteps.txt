@@ -1,0 +1,19 @@
+Union-Find Data Structure : 
+
+Milestone 1 : Implement using individual points pointing to leader vertex
+
+
+
+Maintain a vector of vertices index (as vertex ) and value at index should be parent and no of vertices with given parent.
+
+
+Find : return the value at given index
+
+Union : update the parent pointers of of the group with less no of members.
+
+
+Create a struct called Vertex :
+	Data members : value, parentPointer.
+Create a class named Group :
+	Data members : name, vectorOfVertices.
+	(Create a vector to maintain groups of vertices. All the vertices in the vector should have same parent vertex).

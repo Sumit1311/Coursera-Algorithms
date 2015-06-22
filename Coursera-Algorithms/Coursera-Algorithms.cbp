@@ -39,6 +39,7 @@
 		</Compiler>
 		<Unit filename="include/Graph_Clustering.h" />
 		<Unit filename="include/JobSchedulingTest.h" />
+		<Unit filename="include/Union_Find.h" />
 		<Unit filename="include/graph.h" />
 		<Unit filename="include/huffman_code.h" />
 		<Unit filename="include/job_scheduling.h" />
@@ -49,6 +50,7 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="include/test/primtest.h" />
+		<Unit filename="include/test/unionFind.h" />
 		<Unit filename="include/tree.hh" />
 		<Unit filename="include/tree_util.hh" />
 		<Unit filename="include/util.h" />
@@ -56,6 +58,7 @@
 		<Unit filename="include/xinlin.hh" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Graph_Clustering.cpp" />
+		<Unit filename="src/Union_Find.cpp" />
 		<Unit filename="src/graph.cpp" />
 		<Unit filename="src/huffman_code.cpp" />
 		<Unit filename="src/job_scheduling.cpp" />
@@ -70,6 +73,7 @@
 		<Unit filename="test/primtest.cpp">
 			<Option target="Debug" />
 		</Unit>
+		<Unit filename="test/unionFind.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

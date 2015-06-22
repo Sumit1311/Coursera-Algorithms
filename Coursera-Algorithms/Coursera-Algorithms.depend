@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1433733072 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/main.cpp
+1434946227 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/main.cpp
 	<iostream>
 	"test/graphtest.h"
 	"test/primtest.h"
@@ -7,6 +7,7 @@
 	"JobSchedulingTest.h"
 	"Graph_Clustering.h"
 	"test/huffman_test.h"
+	"test/unionFind.h"
 
 1433655052 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp
 	"graph.h"
@@ -130,4 +131,20 @@
 1431029833 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/tree_util.hh
 	<iostream>
 	"tree.hh"
+
+1434946064 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/test/unionFind.cpp
+	"Union_Find.h"
+
+1434945661 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/Union_Find.h
+	<vector>
+	<string>
+
+1434946445 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/src/Union_Find.cpp
+	"Union_Find.h"
+	<iostream>
+
+1434946064 source:/home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/test/unionFind.cpp
+	"Union_Find.h"
+
+1434946298 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/test/unionFind.h
 
