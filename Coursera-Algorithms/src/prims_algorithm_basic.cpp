@@ -12,19 +12,10 @@ Graph g(NO_OF_VERTICES);
 Graph min_span_tree(NO_OF_VERTICES);
 bool explored[NO_OF_VERTICES];
 
-void read_data_from_file(char * file_name, int content[][3]) {
-    fstream file(file_name);
-    int a,b,c;
-    file>>a>>b;
-    int count=0;
-    while(file>>a>>b>>c) {
-        content[count][0]=a;
-        content[count][1]=b;
-        content[count][2]=c;
-        count++;
-    }
-
-}
+/** \brief Checks if all the vertices in graph explored.
+ *
+ * \return (bool).
+ */
 
 bool all_explored() {
     bool temp=explored[0];
@@ -34,6 +25,13 @@ bool all_explored() {
     return temp;
 }
 
+/** \brief Select edge with min. cost between given node and it's neighbors.
+ *
+ * \param i (int) : Source vertex.
+ * \param temp (int[][2]) : After execution will contain corresponding node with minimum edge cost
+ *                          and it's edge cost
+ *
+ */
 void select_minimum_edge(int i,int temp[][2]) {
     int neighbor_edges[NO_OF_VERTICES]= {-1};
     g.neighbors(neighbor_edges,i,NO_OF_VERTICES);
@@ -58,6 +56,10 @@ void select_minimum_edge(int i,int temp[][2]) {
     temp[0][1]=min[0][1];
 }
 
+/** \brief Reads graph from file. Runs Prim's algorithm on graph.
+ *         Print the overall cost of the generated tree.
+ *
+ */
 void prims_algorithm() {
 
     long int min_cost=0;

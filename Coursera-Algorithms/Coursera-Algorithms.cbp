@@ -39,6 +39,7 @@
 		</Compiler>
 		<Unit filename="include/Graph_Clustering.h" />
 		<Unit filename="include/JobSchedulingTest.h" />
+		<Unit filename="include/Kruskal_Algorithm.h" />
 		<Unit filename="include/Union_Find.h" />
 		<Unit filename="include/graph.h" />
 		<Unit filename="include/huffman_code.h" />
@@ -46,9 +47,8 @@
 		<Unit filename="include/prim.h" />
 		<Unit filename="include/simple_tree.hpp" />
 		<Unit filename="include/test/graphtest.h" />
-		<Unit filename="include/test/huffman_test.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="include/test/huffman_test.h" />
+		<Unit filename="include/test/kruskal_algorithm_test.h" />
 		<Unit filename="include/test/primtest.h" />
 		<Unit filename="include/test/unionFind.h" />
 		<Unit filename="include/tree.hh" />
@@ -58,6 +58,7 @@
 		<Unit filename="include/xinlin.hh" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Graph_Clustering.cpp" />
+		<Unit filename="src/Kruskal_Algorithm.cpp" />
 		<Unit filename="src/Union_Find.cpp" />
 		<Unit filename="src/graph.cpp" />
 		<Unit filename="src/huffman_code.cpp" />
@@ -67,12 +68,11 @@
 		<Unit filename="test/JobSchedulingTest.cpp" />
 		<Unit filename="test/graphtest.cpp">
 			<Option virtualFolder="src/" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="test/huffman_code_test.cpp" />
-		<Unit filename="test/primtest.cpp">
-			<Option target="Debug" />
-		</Unit>
+		<Unit filename="test/jobschedulingtest.cpp" />
+		<Unit filename="test/kruskal_test.cpp" />
+		<Unit filename="test/primtest.cpp" />
 		<Unit filename="test/unionFind.cpp" />
 		<Extensions>
 			<code_completion />

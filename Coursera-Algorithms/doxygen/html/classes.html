@@ -44,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li class="current"><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -91,7 +93,7 @@ $(document).ready(function(){initNavTree('classes.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,23 +107,47 @@ $(document).ready(function(){initNavTree('classes.html','');});
 <div class="title">Class Index</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_G">G</a>&#160;|&#160;<a class="qindex" href="#letter_N">N</a></div>
+<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_B">B</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_G">G</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_J">J</a>&#160;|&#160;<a class="qindex" href="#letter_K">K</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a>&#160;|&#160;<a class="qindex" href="#letter_N">N</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_T">T</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a></div>
 <table style="margin: 10px; white-space: nowrap;" align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
 <tr><td rowspan="2" valign="bottom"><a name="letter_G"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;G&#160;&#160;</div></td></tr></table>
-</td><td rowspan="2" valign="bottom"><a name="letter_a"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;a&#160;&#160;</div></td></tr></table>
+</td><td rowspan="2" valign="bottom"><a name="letter_N"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;N&#160;&#160;</div></td></tr></table>
+</td><td rowspan="2" valign="bottom"><a name="letter_c"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;c&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classtree_1_1iterator__base__less.html">tree::iterator_base_less</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_s"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;s&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_l"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;l&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td valign="top"><a class="el" href="class_graph.html">Graph</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="struct_node.html">Node</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classtree_1_1children__iterator.html">tree::children_iterator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classtree_1_1sibling__iterator.html">tree::sibling_iterator</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_graph___clustering.html">Graph_Clustering</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_U"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;U&#160;&#160;</div></td></tr></table>
+</td><td rowspan="2" valign="bottom"><a name="letter_f"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;f&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classtree_1_1leaf__iterator.html">tree::leaf_iterator</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_t"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;t&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_H"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;H&#160;&#160;</div></td></tr></table>
 </td><td rowspan="2" valign="bottom"><a name="letter_n"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;n&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td valign="top"><a class="el" href="class_union___find.html">Union_Find</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classtree_1_1fixed__depth__iterator.html">tree::fixed_depth_iterator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classtree.html">tree</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_huffman_code.html">HuffmanCode</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_a"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;a&#160;&#160;</div></td></tr></table>
+</td><td rowspan="2" valign="bottom"><a name="letter_g"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;g&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classnode.html">node</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classtree__node__.html">tree_node_</a>&#160;&#160;&#160;</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_J"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;J&#160;&#160;</div></td></tr></table>
+</td><td rowspan="2" valign="bottom"><a name="letter_p"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;p&#160;&#160;</div></td></tr></table>
 </td><td></td></tr>
-<tr><td></td></tr>
-<tr><td valign="top"><a class="el" href="class_graph.html">Graph</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classadjacent__node.html">adjacent_node</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classnode.html">node</a>&#160;&#160;&#160;</td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td valign="top"><a class="el" href="classadjacent__node.html">adjacent_node</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="structgroup.html">group</a>&#160;&#160;&#160;</td><td></td></tr>
+<tr><td valign="top"><a class="el" href="class_job_scheduling_test.html">JobSchedulingTest</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_b"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;b&#160;&#160;</div></td></tr></table>
+</td><td rowspan="2" valign="bottom"><a name="letter_i"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;i&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classtree_1_1post__order__iterator.html">tree::post_order_iterator</a>&#160;&#160;&#160;</td><td></td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_K"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;K&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="classtree_1_1pre__order__iterator.html">tree::pre_order_iterator</a>&#160;&#160;&#160;</td><td></td></tr>
+<tr><td valign="top"><a class="el" href="classtree_1_1breadth__first__queued__iterator.html">tree::breadth_first_queued_iterator</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classtree_1_1iterator__base.html">tree::iterator_base</a>&#160;&#160;&#160;</td><td></td><td></td></tr>
+<tr><td valign="top"><a class="el" href="class_kruskal___algorithm.html">Kruskal_Algorithm</a>&#160;&#160;&#160;</td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_G">G</a>&#160;|&#160;<a class="qindex" href="#letter_N">N</a></div>
+<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_B">B</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_G">G</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_J">J</a>&#160;|&#160;<a class="qindex" href="#letter_K">K</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a>&#160;|&#160;<a class="qindex" href="#letter_N">N</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_T">T</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a></div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 06:23:48 for Coursera-Algorithms by
+    <li class="footer">Generated on Wed Jun 24 2015 12:37:29 for Coursera-Algorithms by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['set_5fedge_5fvalue',['set_edge_value',['../class_graph.html#a813b6f6e3c54c61f5001a5040ae2b0a4',1,'Graph']]],
-  ['set_5fnode_5fvalue',['set_node_value',['../class_graph.html#a848b75bd7bc89a4081574f7072fb311f',1,'Graph']]]
+  ['huffman_5fcode_5ftest',['huffman_code_test',['../huffman__test_8h.html#a7c4a8784b908af3a60bb7605c7ae2e7e',1,'huffman_code_test():&#160;huffman_code_test.cpp'],['../huffman__code__test_8cpp.html#a7c4a8784b908af3a60bb7605c7ae2e7e',1,'huffman_code_test():&#160;huffman_code_test.cpp']]],
+  ['huffmancode',['HuffmanCode',['../class_huffman_code.html#a9504f43864137a10c777e88165a7282c',1,'HuffmanCode']]]
 ];

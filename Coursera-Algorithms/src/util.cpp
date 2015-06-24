@@ -22,3 +22,17 @@ void print_2d_array(int **arr,int r,int c) {
         cout<<endl;
     }
 }
+
+void read_data_from_file(char * file_name, int content[][3]) {
+    fstream file(file_name);
+    int a,b,c;
+    file>>a>>b;
+    int count=0;
+    while(file>>a>>b>>c) {
+        content[count][0]=a;
+        content[count][1]=b;
+        content[count][2]=c;
+        count++;
+    }
+
+}

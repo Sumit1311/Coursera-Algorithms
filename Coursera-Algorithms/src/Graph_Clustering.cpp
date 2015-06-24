@@ -5,6 +5,11 @@
 
 using namespace std;
 
+/** \brief Constructor for initializing Graph_Clustering.
+ *
+ * \param n (int) : No. of Nodes.
+ * \param e (int) : No. of edges.
+ */
 Graph_Clustering::Graph_Clustering(int n,int e):Graph(n,e) {
     //ctor
     no_of_nodes=n;
@@ -12,6 +17,12 @@ Graph_Clustering::Graph_Clustering(int n,int e):Graph(n,e) {
     cout<<"No of edges : "<<e<<endl;
 }
 
+/** \brief Comparison function for comparing edge costs of two edges.
+ *
+ * \param a(void *) : pointer to first edge format(NODE1 NODE2 EDGE_COST)
+ * \param b(void *) : pointer to second edge format(NODE1 NODE2 EDGE_COST)
+ * \return (int).
+ */
 int compare1(const void *a,const void *b) {
     int **aint=(int **)a;
     int **bint=(int **)b;
@@ -28,7 +39,10 @@ int compare1(const void *a,const void *b) {
         return 1;
 }
 
-
+/** \brief Start clustering algorithm on Graph. For given no. of clusters.
+ *
+ * \param clusters (int) : Number of clusters after which algorithm should stop.
+ */
 void Graph_Clustering::Start_Clustering(int clusters) {
     int **sorted_edges;
     sorted_edges=new int*[no_of_edges];
@@ -37,7 +51,6 @@ void Graph_Clustering::Start_Clustering(int clusters) {
     }
     cout<<"Get All Edges :"<<endl;
     get_all_edges(sorted_edges);
-    print_2d_array(sorted_edges,no_of_edges,3);
     qsort(sorted_edges,no_of_edges,sizeof(sorted_edges[0]),compare1);
     print_2d_array(sorted_edges,no_of_edges,3);
     int cluster[no_of_nodes];
@@ -53,7 +66,10 @@ void Graph_Clustering::Start_Clustering(int clusters) {
     cout<<"Max Spacing :"<<sorted_edges[count][2];
 }
 
-
+/** \brief Create a graph for clustering algorithm.
+ *
+ * \param list (int **) : a 2-d array with edge information (NODE1 NODE2 EDGE_COST)
+ */
 void Graph_Clustering::Create_Graph(int **list ) {
     cout<<"Creating  Graph.."<<endl;
     for(int i=0; i<no_of_nodes; i++) {

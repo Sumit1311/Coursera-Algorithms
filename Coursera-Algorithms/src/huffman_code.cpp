@@ -2,11 +2,24 @@
 #include<huffman_code.h>
 #include<algorithm>
 
+/** \brief Overloaded operator <<. The function prints the Pairs type in proper format.
+ *
+ * \param strm (ostream &) : Output stream to which redirect data.
+ * \param kvPair (Pairs&) : A key value pair which is a object of Pairs type.
+ * \return strm (ostream &).
+ */
 ostream& operator<<(ostream& strm, const Pairs& kvPair) {
     strm << kvPair.data.first << "{" << kvPair.data.second<<"|"<<kvPair.left_child<<"|"<<kvPair.right_child<<"}";
     return strm;
 }
 
+/** \brief This method generates a Pair type for given symbol and frequency.
+ *
+ * \param sym (string) : Symbols value.
+ * \param freq (int) : Frequency of the symbol.
+ * \return (Pair*)
+ *
+ */
 Pairs* getNewPair(string sym,int freq){
     Pairs *p=new Pairs();
     p->data.first=sym;
@@ -16,10 +29,20 @@ Pairs* getNewPair(string sym,int freq){
     return p;
 }
 
+/** \brief Prints the given pair
+ *
+ * \param p (Pairs *)
+ *
+ */
 void HuffmanCode::print_node(Pairs *p) {
     cout<<*p<<endl;
 }
 
+/** \brief postOrder traversal of the tree generated.
+ *
+ * \param root (Pair *) : Reference of root of tree to be traversed.
+ *
+ */
 void HuffmanCode::postOrderTree(Pairs *root){
     if(root == NULL){
         return;
@@ -31,6 +54,12 @@ void HuffmanCode::postOrderTree(Pairs *root){
     this->postOrderTree(root->right_child);
 }
 
+/** \brief This method inserts the binary codes in the vector. For each symbol.
+ *         This is a recursive method which generates the code for each symbol one by one.
+ *
+ * \param p (Pairs *) : Reference to the root of Huffman Tree.
+ * \param str (string) : Previously generated string of binary codes.
+ */
 void HuffmanCode::insertCodes(Pairs *p,string str){
     if(p==NULL){
         return;
@@ -46,11 +75,11 @@ void HuffmanCode::insertCodes(Pairs *p,string str){
         return;
     }
 }
-/** \brief Functors for comarison of pairs to sort by highest value first
+/** \brief Function for comparison of pairs to sort by highest value first
  *
- * \param
- * \param
- * \return
+ * \param first_item (Pairs *) : First item to be compared
+ * \param second_item (Pairs *) : Second item to be compared
+ * \return (bool)
  *
  */
 bool nodeComparison(const Pairs* first_item, const Pairs* second_item)  {
@@ -63,6 +92,9 @@ bool nodeComparison(const Pairs* first_item, const Pairs* second_item)  {
     return true;
 }
 
+/** \brief Function for generating the Huffman tree. It uses Heap to store the freq as key and sym as values.
+ *         It generates the tree by popping up the values from heap.
+ */
 void HuffmanCode::generateTree() {
     if(this->symbols.size() == 1){
         return;
@@ -87,6 +119,12 @@ void HuffmanCode::generateTree() {
     }
 }
 
+/** \brief Merge two symbols to form an internal node in Huffman Tree.
+ *
+ * \param first (Pairs *)
+ * \param second (Pairs *)
+ * \return (Pairs *)
+ */
 Pairs* HuffmanCode::mergeTwoSymbols(Pairs *first,Pairs *second) {
     Pairs *p=new Pairs();
     p->data.first="$";
@@ -97,6 +135,10 @@ Pairs* HuffmanCode::mergeTwoSymbols(Pairs *first,Pairs *second) {
     p->right_child=second;
     return p;
 }
+
+/** \brief Print all the symbols in map_symbols. To give view of generated tree.
+ *
+ */
 void HuffmanCode::print_progress() {
     map_symbols::iterator it=this->symbols.begin();
     while(it!=this->symbols.end()) {

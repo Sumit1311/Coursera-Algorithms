@@ -44,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -90,7 +91,7 @@ $(document).ready(function(){initNavTree('prims__algorithm__basic_8cpp.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,19 +102,62 @@ $(document).ready(function(){initNavTree('prims__algorithm__basic_8cpp.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">prims_algorithm_basic.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="graph_8h_source.html">graph.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="prim_8h_source.html">prim.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa2e816671ed2c5a1cb07d4522930e8fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#aa2e816671ed2c5a1cb07d4522930e8fc">all_explored</a> ()</td></tr>
+<tr class="memdesc:aa2e816671ed2c5a1cb07d4522930e8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all the vertices in graph explored.  <a href="#aa2e816671ed2c5a1cb07d4522930e8fc">More...</a><br/></td></tr>
+<tr class="separator:aa2e816671ed2c5a1cb07d4522930e8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3de6bbd93f3ba933cffa1d142739da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#a9e3de6bbd93f3ba933cffa1d142739da">select_minimum_edge</a> (int i, int temp[][2])</td></tr>
+<tr class="memdesc:a9e3de6bbd93f3ba933cffa1d142739da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select edge with min. cost between given node and it's neighbors.  <a href="#a9e3de6bbd93f3ba933cffa1d142739da">More...</a><br/></td></tr>
+<tr class="separator:a9e3de6bbd93f3ba933cffa1d142739da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ca17f0558b975787983a8e7e280cc63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#a4ca17f0558b975787983a8e7e280cc63">prims_algorithm</a> ()</td></tr>
+<tr class="memdesc:a4ca17f0558b975787983a8e7e280cc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads graph from file. Runs Prim's algorithm on graph. Print the overall cost of the generated tree.  <a href="#a4ca17f0558b975787983a8e7e280cc63">More...</a><br/></td></tr>
 <tr class="separator:a4ca17f0558b975787983a8e7e280cc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aafe743b9160247418e365d48293f51f3"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#aafe743b9160247418e365d48293f51f3">NO_OF_VERTICES</a> =500</td></tr>
+<tr class="separator:aafe743b9160247418e365d48293f51f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7178c8ab632fe9dd1e95e4574d85e0f3"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#a7178c8ab632fe9dd1e95e4574d85e0f3">NO_OF_EDGES</a> =2184</td></tr>
+<tr class="separator:a7178c8ab632fe9dd1e95e4574d85e0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c9e7adc6a2a94b68a5dd5a95017710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graph.html">Graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#a12c9e7adc6a2a94b68a5dd5a95017710">g</a> (<a class="el" href="prims__algorithm__basic_8cpp.html#aafe743b9160247418e365d48293f51f3">NO_OF_VERTICES</a>)</td></tr>
+<tr class="separator:a12c9e7adc6a2a94b68a5dd5a95017710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccddd35bc742d71ca6a0eebe9a2765b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graph.html">Graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#a3ccddd35bc742d71ca6a0eebe9a2765b">min_span_tree</a> (<a class="el" href="prims__algorithm__basic_8cpp.html#aafe743b9160247418e365d48293f51f3">NO_OF_VERTICES</a>)</td></tr>
+<tr class="separator:a3ccddd35bc742d71ca6a0eebe9a2765b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33f02ff609075000fda70adc6eae08c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prims__algorithm__basic_8cpp.html#aa33f02ff609075000fda70adc6eae08c">explored</a> [<a class="el" href="prims__algorithm__basic_8cpp.html#aafe743b9160247418e365d48293f51f3">NO_OF_VERTICES</a>]</td></tr>
+<tr class="separator:aa33f02ff609075000fda70adc6eae08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aa2e816671ed2c5a1cb07d4522930e8fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool all_explored </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if all the vertices in graph explored. </p>
+<dl class="section return"><dt>Returns</dt><dd>(bool). </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a4ca17f0558b975787983a8e7e280cc63"></a>
 <div class="memitem">
 <div class="memproto">
@@ -127,6 +171,104 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Reads graph from file. Runs Prim's algorithm on graph. Print the overall cost of the generated tree. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e3de6bbd93f3ba933cffa1d142739da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void select_minimum_edge </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>temp</em>[][2]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select edge with min. cost between given node and it's neighbors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>(int) : Source vertex. </td></tr>
+    <tr><td class="paramname">temp</td><td>(int[][2]) : After execution will contain corresponding node with minimum edge cost and it's edge cost </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aa33f02ff609075000fda70adc6eae08c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool explored[<a class="el" href="prims__algorithm__basic_8cpp.html#aafe743b9160247418e365d48293f51f3">NO_OF_VERTICES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12c9e7adc6a2a94b68a5dd5a95017710"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graph.html">Graph</a> g(<a class="el" href="prims__algorithm__basic_8cpp.html#aafe743b9160247418e365d48293f51f3">NO_OF_VERTICES</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ccddd35bc742d71ca6a0eebe9a2765b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graph.html">Graph</a> min_span_tree(<a class="el" href="prims__algorithm__basic_8cpp.html#aafe743b9160247418e365d48293f51f3">NO_OF_VERTICES</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7178c8ab632fe9dd1e95e4574d85e0f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int NO_OF_EDGES =2184</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aafe743b9160247418e365d48293f51f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int NO_OF_VERTICES =500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->
@@ -135,7 +277,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="prims__algorithm__basic_8cpp.html">prims_algorithm_basic.cpp</a></li>
-    <li class="footer">Generated on Sat Apr 4 2015 06:23:48 for Coursera-Algorithms by
+    <li class="footer">Generated on Wed Jun 24 2015 12:37:29 for Coursera-Algorithms by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -96,15 +96,41 @@ WARN_LOGFILE            = "/home/sumit/Documents/Github For Algorithms/Coursera-
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
+	"../include/tree_util.hh" \
+	"../include/JobSchedulingTest.h" \
+	"../include/Kruskal_Algorithm.h" \
 	"../include/test/graphtest.h" \
-	"../test/primtest.cpp" \
-	"../src/prims_algorithm_basic.cpp" \
-	"../main.cpp" \
-	"../include/test/primtest.h" \
-	"../include/prim.h" \
-	"../include/graph.h" \
+	"../include/test/kruskal_algorithm_test.h" \
 	"../test/graphtest.cpp" \
-	"../src/graph.cpp" 
+	"../test/jobschedulingtest.cpp" \
+	"../include/test/primtest.h" \
+	"../src/Graph_Clustering.cpp" \
+	"../include/util.h" \
+	"../src/Kruskal_Algorithm.cpp" \
+	"../include/tree.hh" \
+	"../include/huffman_code.h" \
+	"../test/JobSchedulingTest.cpp" \
+	"../src/Union_Find.cpp" \
+	"../include/test/huffman_test.h" \
+	"../include/xinlin.hh" \
+	"../include/job_scheduling.h" \
+	"../test/huffman_code_test.cpp" \
+	"../include/Graph_Clustering.h" \
+	"../include/utils.h" \
+	"../test/kruskal_test.cpp" \
+	"../src/prims_algorithm_basic.cpp" \
+	"../src/graph.cpp" \
+	"../test/unionFind.cpp" \
+	"../include/Union_Find.h" \
+	"../src/job_scheduling.cpp" \
+	"../src/huffman_code.cpp" \
+	"../include/simple_tree.hpp" \
+	"../include/test/unionFind.h" \
+	"../include/prim.h" \
+	"../main.cpp" \
+	"../include/graph.h" \
+	"../src/util.cpp" \
+	"../test/primtest.cpp" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = NO

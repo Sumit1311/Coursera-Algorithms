@@ -148,3 +148,130 @@
 
 1434946298 /home/geek/Documents/Workplace/Coursera-Algorithms/Coursera-Algorithms/include/test/unionFind.h
 
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp
+	"graph.h"
+	<cstddef>
+	<iostream>
+
+1435117979 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/graph.h
+	<cstddef>
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Graph_Clustering.cpp
+	"Graph_Clustering.h"
+	<cstdlib>
+	"utils.h"
+	<iostream>
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Graph_Clustering.h
+	"graph.h"
+
+1435121878 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp
+	<iostream>
+	<huffman_code.h>
+	<algorithm>
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/huffman_code.h
+	<map>
+	<string>
+	<vector>
+	<utility>
+	"tree.hh"
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+	<iostream>
+	<cassert>
+	<memory>
+	<stdexcept>
+	<iterator>
+	<set>
+	<queue>
+	<algorithm>
+	<cstddef>
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/job_scheduling.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	"utils.h"
+	<typeinfo>
+
+1435125797 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Kruskal_Algorithm.cpp
+	"Kruskal_Algorithm.h"
+	"utils.h"
+	"Union_Find.h"
+	<iostream>
+
+1435121650 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Kruskal_Algorithm.h
+	"graph.h"
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Union_Find.h
+	<vector>
+	<string>
+
+1435122735 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/prims_algorithm_basic.cpp
+	"graph.h"
+	"prim.h"
+	"utils.h"
+	<iostream>
+	<fstream>
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/prim.h
+	"graph.h"
+
+1435125507 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Union_Find.cpp
+	"Union_Find.h"
+	<iostream>
+
+1435121850 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
+	"utils.h"
+	<iostream>
+	<fstream>
+
+1427697760 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/graphtest.cpp
+	"graph.h"
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/huffman_code_test.cpp
+	"huffman_code.h"
+	<vector>
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/JobSchedulingTest.cpp
+	"JobSchedulingTest.h"
+	"job_scheduling.h"
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/JobSchedulingTest.h
+	<fstream>
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/job_scheduling.h
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/jobschedulingtest.cpp
+
+1435122148 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/kruskal_test.cpp
+	"test/kruskal_algorithm_test.h"
+	"Kruskal_Algorithm.h"
+
+1435120499 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/kruskal_algorithm_test.h
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/primtest.cpp
+	"prim.h"
+
+1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/unionFind.cpp
+	"Union_Find.h"
+
+1435122507 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/main.cpp
+	<iostream>
+	"test/graphtest.h"
+	"test/primtest.h"
+	"test/huffman_test.h"
+	"test/unionFind.h"
+	"test/kruskal_algorithm_test.h"
+
+1427694801 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/graphtest.h
+
+1427694806 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/primtest.h
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/huffman_test.h
+
+1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/unionFind.h
+
