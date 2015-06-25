@@ -11,9 +11,15 @@ Find : return the value at given index
 
 Union : update the parent pointers of of the group with less no of members.
 
-
-Create a struct called Vertex :
-	Data members : value, parentPointer.
-Create a class named Group :
-	Data members : name, vectorOfVertices.
-	(Create a vector to maintain groups of vertices. All the vertices in the vector should have same parent vertex).
+Milestone 2 : Kruskal's Algorithm : 
+	- Initialize the graph with given no. of vertices and edges.
+		-----Use Graph.h as inputGraph and resultant minimunm spanning tree.
+	- Get all the edges sorted by edge lengths
+		-----Use qsort as we are not dealing with iterators(still <algorithm> sort can be used)
+	- Initialize the Union-Find with no of vertices
+		-----Union find will be used for cycle checks.(Union find will have independent strongly connected components as groups)
+	- Take edges one by one from smaller to larger edge lengths
+	- For every edge e with s(source) and d(destination) :
+		- get group for s and d (Using find operation of union find)
+		- if two groups are same exclude that edge(as it will form a cycle)
+		-if two groups are different merge two groups (make union operation of union find ds)and add edge to final graph
