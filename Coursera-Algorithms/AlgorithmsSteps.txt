@@ -23,3 +23,29 @@ Milestone 2 : Kruskal's Algorithm :
 		- get group for s and d (Using find operation of union find)
 		- if two groups are same exclude that edge(as it will form a cycle)
 		-if two groups are different merge two groups (make union operation of union find ds)and add edge to final graph
+
+Milestone 3 : Maximum weight independent set(Only for path graph) :-
+	Problem Definition :
+		To find the nodes with maximum weight such that no node share an edge with other node.
+
+	Approach to be used is Dynamic Programming
+	Step 1 : 
+		Structure of subproblems : If a vertex is selected no neighbors of that vertext will be selected, which leave us 2 possibilities at every node 
+			a. If a node is selected.
+			b. If the node is not selected.
+	Step 2 :
+		Principle Of Optimality : There are only two possiblities for every vertex either it is included in set or not. So that depending on the case we can calculate the maximum weight so far by using these two cases recursively to ultimately reach a solution.
+	Step 3 :
+		Bottom-Up approach : Start solving the problem with 0 vertex in set and iterate over all vertices to find maximum weight of independent set.
+	Step 4 :
+		Reconstruction : To get all the vertices in the set with given maximum weight. Iterate backwards on the cache (an array use d to store the maximum weight of particular set.)
+	Milestone 3.1 :
+		Data Structures to be used :
+			Use an array m for storing results of previous computation.
+			A graph using Graph.h.(Generate a path graph)
+		Algorithm for calculating maximum weight :
+		Iterate over all the vertices :
+			m[i]=max{w[i]+m[i-2],m[i-1]}
+	Milestone 3.2 : 
+		Reconstruction :
+		

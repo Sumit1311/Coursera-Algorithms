@@ -40,6 +40,8 @@
 		<Unit filename="include/Graph_Clustering.h" />
 		<Unit filename="include/JobSchedulingTest.h" />
 		<Unit filename="include/Kruskal_Algorithm.h" />
+		<Unit filename="include/MWIS-test.h" />
+		<Unit filename="include/MaxWeightIndepSet.h" />
 		<Unit filename="include/Union_Find.h" />
 		<Unit filename="include/graph.h" />
 		<Unit filename="include/huffman_code.h" />
@@ -59,6 +61,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Graph_Clustering.cpp" />
 		<Unit filename="src/Kruskal_Algorithm.cpp" />
+		<Unit filename="src/MaxWeightIndepSet.cpp" />
 		<Unit filename="src/Union_Find.cpp" />
 		<Unit filename="src/graph.cpp" />
 		<Unit filename="src/huffman_code.cpp" />
@@ -66,6 +69,7 @@
 		<Unit filename="src/prims_algorithm_basic.cpp" />
 		<Unit filename="src/util.cpp" />
 		<Unit filename="test/JobSchedulingTest.cpp" />
+		<Unit filename="test/MWIS-test.cpp" />
 		<Unit filename="test/graphtest.cpp">
 			<Option virtualFolder="src/" />
 		</Unit>

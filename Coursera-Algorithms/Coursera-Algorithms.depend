@@ -156,7 +156,7 @@
 1435117979 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/graph.h
 	<cstddef>
 
-1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Graph_Clustering.cpp
+1435126748 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Graph_Clustering.cpp
 	"Graph_Clustering.h"
 	<cstdlib>
 	"utils.h"
@@ -167,7 +167,7 @@
 
 1435121878 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
 
-1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp
+1435127780 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp
 	<iostream>
 	<huffman_code.h>
 	<algorithm>
@@ -190,27 +190,27 @@
 	<algorithm>
 	<cstddef>
 
-1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/job_scheduling.cpp
+1435128489 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/job_scheduling.cpp
 	<iostream>
 	<fstream>
 	<cstdlib>
 	"utils.h"
 	<typeinfo>
 
-1435125797 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Kruskal_Algorithm.cpp
+1435128861 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Kruskal_Algorithm.cpp
 	"Kruskal_Algorithm.h"
 	"utils.h"
 	"Union_Find.h"
 	<iostream>
 
-1435121650 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Kruskal_Algorithm.h
+1435317596 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Kruskal_Algorithm.h
 	"graph.h"
 
 1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Union_Find.h
 	<vector>
 	<string>
 
-1435122735 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/prims_algorithm_basic.cpp
+1435129290 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/prims_algorithm_basic.cpp
 	"graph.h"
 	"prim.h"
 	"utils.h"
@@ -220,7 +220,7 @@
 1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/prim.h
 	"graph.h"
 
-1435125507 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Union_Find.cpp
+1435129632 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Union_Find.cpp
 	"Union_Find.h"
 	<iostream>
 
@@ -259,13 +259,13 @@
 1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/unionFind.cpp
 	"Union_Find.h"
 
-1435122507 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/main.cpp
+1435317451 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/main.cpp
 	<iostream>
 	"test/graphtest.h"
 	"test/primtest.h"
 	"test/huffman_test.h"
 	"test/unionFind.h"
-	"test/kruskal_algorithm_test.h"
+	"MWIS-test.h"
 
 1427694801 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/graphtest.h
 
@@ -274,4 +274,19 @@
 1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/huffman_test.h
 
 1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/unionFind.h
+
+1435323198 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/MaxWeightIndepSet.cpp
+	"MaxWeightIndepSet.h"
+	<iostream>
+	"utils.h"
+
+1435322527 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/MaxWeightIndepSet.h
+	"graph.h"
+	<set>
+
+1435314798 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/MWIS-test.h
+
+1435322562 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/MWIS-test.cpp
+	"utils.h"
+	"MaxWeightIndepSet.h"
 

@@ -6,7 +6,7 @@ class Kruskal_Algorithm
 {
     public:
         Kruskal_Algorithm(int,int);
-        void run_kruskal_algorithm();
+        long int run_kruskal_algorithm();
     protected:
     private:
         int NO_OF_VERTICES=0;

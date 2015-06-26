@@ -6,13 +6,15 @@
 //#include "Graph_Clustering.h"
 #include "test/huffman_test.h"
 #include "test/unionFind.h"
-#include "test/kruskal_algorithm_test.h"
+//#include "test/kruskal_algorithm_test.h"
+#include "MWIS-test.h"
 
 using namespace std;
 
 int main() {
     cout << "Hello world!" << endl;
-    run_kruskal_test();
+    run_max_weight_indep_set();
+    //run_kruskal_test();
     //run_union_find();
     //huffman_code_test();
     //run_graph_test();
