@@ -28,10 +28,6 @@ void MaxWeightIndepSet::createGraph(int edges[][2]) {
     return;
 }
 
-int getMaxOfTwo(int a,int b) {
-    return a>b ? a:b;
-}
-
 void MaxWeightIndepSet::calculateMaxWeight() {
     for(int i=0; i<noOfNodes; i++) {
         if(i == 0) {

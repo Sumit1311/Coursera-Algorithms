@@ -48,5 +48,27 @@ Milestone 3 : Maximum weight independent set(Only for path graph) :-
 			m[i]=max{w[i]+m[i-2],m[i-1]}
 	Milestone 3.2 : 
 		Reconstruction :
+			if current vertex weight + i-2 weight is greater than m[i-1] then current vertex is included otherwise it is excluded.
+
+Milestone 4 : Knapsack Problem 
+
+	Here a subproblem is :
+		v(i,x) : which represents the optimal value when 
+			i) when only first i items are selected
+			ii) max weight is x
+	DS : 
+		1) vector of pairs to maintain value vs weight graph of each item.
+		2) 2-d array to maintain the values of smaller subproblems
+	Step 1 : 
+		Initialize the vector with the given values and weights
+	Step 2 :
+		Iterate over all the items
+			for each item i calculate it's max weight for either the item is selected or not.
+			This is the value max(v(i-1,x),v(i)+v(i-1,x-w(i))
+
+	Step 3 : 
+		Reconstruction :
+			 
+
 			
 		

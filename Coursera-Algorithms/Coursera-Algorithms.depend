@@ -165,7 +165,7 @@
 1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Graph_Clustering.h
 	"graph.h"
 
-1435121878 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
+1435555418 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
 
 1435127780 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp
 	<iostream>
@@ -224,7 +224,7 @@
 	"Union_Find.h"
 	<iostream>
 
-1435121850 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
+1435555421 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
 	"utils.h"
 	<iostream>
 	<fstream>
@@ -259,13 +259,9 @@
 1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/unionFind.cpp
 	"Union_Find.h"
 
-1435317451 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/main.cpp
+1435555371 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/main.cpp
 	<iostream>
-	"test/graphtest.h"
-	"test/primtest.h"
-	"test/huffman_test.h"
-	"test/unionFind.h"
-	"MWIS-test.h"
+	"test/knapsackTest.h"
 
 1427694801 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/graphtest.h
 
@@ -275,10 +271,11 @@
 
 1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/unionFind.h
 
-1435323198 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/MaxWeightIndepSet.cpp
+1435555391 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/MaxWeightIndepSet.cpp
 	"MaxWeightIndepSet.h"
 	<iostream>
 	"utils.h"
+	<utility>
 
 1435322527 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/MaxWeightIndepSet.h
 	"graph.h"
@@ -289,4 +286,20 @@
 1435322562 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/MWIS-test.cpp
 	"utils.h"
 	"MaxWeightIndepSet.h"
+
+1435558317 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/KnapsackProblem.cpp
+	"KnapsackProblem.h"
+	"utils.h"
+	<iostream>
+
+1435557893 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/KnapsackProblem.h
+	<vector>
+	<utility>
+	<set>
+
+1435556112 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/knapsackTest.cpp
+	"test/knapsackTest.h"
+	"KnapsackProblem.h"
+
+1435554796 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/knapsackTest.h
 

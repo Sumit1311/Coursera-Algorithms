@@ -39,6 +39,7 @@
 		</Compiler>
 		<Unit filename="include/Graph_Clustering.h" />
 		<Unit filename="include/JobSchedulingTest.h" />
+		<Unit filename="include/KnapsackProblem.h" />
 		<Unit filename="include/Kruskal_Algorithm.h" />
 		<Unit filename="include/MWIS-test.h" />
 		<Unit filename="include/MaxWeightIndepSet.h" />
@@ -50,6 +51,7 @@
 		<Unit filename="include/simple_tree.hpp" />
 		<Unit filename="include/test/graphtest.h" />
 		<Unit filename="include/test/huffman_test.h" />
+		<Unit filename="include/test/knapsackTest.h" />
 		<Unit filename="include/test/kruskal_algorithm_test.h" />
 		<Unit filename="include/test/primtest.h" />
 		<Unit filename="include/test/unionFind.h" />
@@ -60,6 +62,7 @@
 		<Unit filename="include/xinlin.hh" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Graph_Clustering.cpp" />
+		<Unit filename="src/KnapsackProblem.cpp" />
 		<Unit filename="src/Kruskal_Algorithm.cpp" />
 		<Unit filename="src/MaxWeightIndepSet.cpp" />
 		<Unit filename="src/Union_Find.cpp" />
@@ -75,6 +78,7 @@
 		</Unit>
 		<Unit filename="test/huffman_code_test.cpp" />
 		<Unit filename="test/jobschedulingtest.cpp" />
+		<Unit filename="test/knapsackTest.cpp" />
 		<Unit filename="test/kruskal_test.cpp" />
 		<Unit filename="test/primtest.cpp" />
 		<Unit filename="test/unionFind.cpp" />
@@ -88,7 +92,7 @@
 				<doxyfile_warnings />
 				<doxyfile_output />
 				<doxyfile_dot class_diagrams="1" />
-				<general />
+				<general use_at_in_tags="1" />
 			</DoxyBlocks>
 			<envvars />
 		</Extensions>
