@@ -1,0 +1,4 @@
+#ifndef KNAPSACKTEST_H_INCLUDED
+#define KNAPSACKTEST_H_INCLUDED
+void run_knapsack_test();
+#endif // KNAPSACKTEST_H_INCLUDED
