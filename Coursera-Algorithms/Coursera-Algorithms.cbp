@@ -43,6 +43,7 @@
 		<Unit filename="include/Kruskal_Algorithm.h" />
 		<Unit filename="include/MWIS-test.h" />
 		<Unit filename="include/MaxWeightIndepSet.h" />
+		<Unit filename="include/SequenceAlignment.h" />
 		<Unit filename="include/Union_Find.h" />
 		<Unit filename="include/graph.h" />
 		<Unit filename="include/huffman_code.h" />
@@ -65,6 +66,7 @@
 		<Unit filename="src/KnapsackProblem.cpp" />
 		<Unit filename="src/Kruskal_Algorithm.cpp" />
 		<Unit filename="src/MaxWeightIndepSet.cpp" />
+		<Unit filename="src/SequenceAlignment.cpp" />
 		<Unit filename="src/Union_Find.cpp" />
 		<Unit filename="src/graph.cpp" />
 		<Unit filename="src/huffman_code.cpp" />

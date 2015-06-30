@@ -59,6 +59,7 @@ Milestone 4 : Knapsack Problem
 	DS : 
 		1) vector of pairs to maintain value vs weight graph of each item.
 		2) 2-d array to maintain the values of smaller subproblems
+		(Items selected and residual knapsack capacity.)
 	Step 1 : 
 		Initialize the vector with the given values and weights
 	Step 2 :
@@ -68,7 +69,16 @@ Milestone 4 : Knapsack Problem
 
 	Step 3 : 
 		Reconstruction :
-			 
+			Use the exclusion condition as the fix. 
 
-			
-		
+Milestone 5 : Sequence Alignment
+	I/p : 
+		Two Strings, And Penalty for a gap and a mismatch.
+	DS :
+		A 2-D array to maintain the penalty when the i letters from first string and j letters from string selected.
+	Steps : 
+		1) Get two input strings
+		2) Get every character from each string and perform the 		operations
+		3) Maintain the 2-D array for penalty of each combination of characters.
+	Reconstruction : 
+		Reconstruct the solution by checking the values in the 2-D array.
