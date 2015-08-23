@@ -44,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -76,6 +78,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li class="current"><a href="functions_func.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_func_b.html#index_b"><span>b</span></a></li>
+      <li><a href="functions_func_c.html#index_c"><span>c</span></a></li>
+      <li><a href="functions_func_d.html#index_d"><span>d</span></a></li>
+      <li><a href="functions_func_e.html#index_e"><span>e</span></a></li>
+      <li><a href="functions_func_f.html#index_f"><span>f</span></a></li>
+      <li><a href="functions_func_g.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_func_h.html#index_h"><span>h</span></a></li>
+      <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
+      <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
+      <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
+      <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
+      <li><a href="functions_func_o.html#index_o"><span>o</span></a></li>
+      <li><a href="functions_func_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_func_r.html#index_r"><span>r</span></a></li>
+      <li><a href="functions_func_s.html#index_s"><span>s</span></a></li>
+      <li><a href="functions_func_t.html#index_t"><span>t</span></a></li>
+      <li><a href="functions_func_u.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_func_w.html#index_w"><span>w</span></a></li>
+      <li><a href="functions_func_~.html#index_~"><span>~</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -98,7 +127,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,9 +137,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </div>
 
 <div class="contents">
-&#160;<ul>
+&#160;
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>add_edge()
-: <a class="el" href="class_graph.html#a3e72ee1a9cb99edf0375ae2808bdd5d8">Graph</a>
+: <a class="el" href="class_graph.html#a27e8e627cb2ba9f366a8bd75f9a5e878">Graph</a>
 </li>
 <li>add_node()
 : <a class="el" href="class_graph.html#a64a657d509a8510ec1e84886ebf20c26">Graph</a>
@@ -118,35 +149,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>adjacent_node()
 : <a class="el" href="classadjacent__node.html#aaadd913a3d0bc6a36732ca3fdb098a3d">adjacent_node</a>
 </li>
-<li>get_edge_value()
-: <a class="el" href="class_graph.html#a61e36e8655625b729a4ecb2ede5bbfc6">Graph</a>
+<li>append_child()
+: <a class="el" href="classtree.html#adfe8ab09c997fb7a23d27fa4be351386">tree&lt; T, tree_node_allocator &gt;</a>
 </li>
-<li>get_node_value()
-: <a class="el" href="class_graph.html#aa9d8e41cd2d1a06b120f4e9d76a207de">Graph</a>
-</li>
-<li>Graph()
-: <a class="el" href="class_graph.html#a6381663d9f8215c377123a3a8107011c">Graph</a>
-</li>
-<li>isAdjacent()
-: <a class="el" href="class_graph.html#a13c1817d49146f2d80a2df363300c670">Graph</a>
-</li>
-<li>neighbors()
-: <a class="el" href="class_graph.html#a5db491e1cdbf8b33b1601fc5f4aabb23">Graph</a>
-</li>
-<li>node()
-: <a class="el" href="classnode.html#a6ad04e976f73f9aac56310c0c8bd8ec4">node</a>
-</li>
-<li>print_graph()
-: <a class="el" href="class_graph.html#a9bb73bcb3a79b24e224246c400c9be02">Graph</a>
-</li>
-<li>remove_edge()
-: <a class="el" href="class_graph.html#ae97535b075d952dcb4fff167b65e300c">Graph</a>
-</li>
-<li>set_edge_value()
-: <a class="el" href="class_graph.html#a813b6f6e3c54c61f5001a5040ae2b0a4">Graph</a>
-</li>
-<li>set_node_value()
-: <a class="el" href="class_graph.html#a848b75bd7bc89a4081574f7072fb311f">Graph</a>
+<li>append_children()
+: <a class="el" href="classtree.html#ab54b9862f3891737d6b4740d47dd9c68">tree&lt; T, tree_node_allocator &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -154,7 +161,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 06:23:48 for Coursera-Algorithms by
+    <li class="footer">Generated on Wed Jun 24 2015 12:37:29 for Coursera-Algorithms by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

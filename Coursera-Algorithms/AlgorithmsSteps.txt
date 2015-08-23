@@ -12,6 +12,19 @@ Find : return the value at given index
 
 Union : update the parent pointers of of the group with less no of members.
 
+Milestone 2 : Kruskal's Algorithm : 
+	- Initialize the graph with given no. of vertices and edges.
+		-----Use Graph.h as inputGraph and resultant minimunm spanning tree.
+	- Get all the edges sorted by edge lengths
+		-----Use qsort as we are not dealing with iterators(still <algorithm> sort can be used)
+	- Initialize the Union-Find with no of vertices
+		-----Union find will be used for cycle checks.(Union find will have independent strongly connected components as groups)
+	- Take edges one by one from smaller to larger edge lengths
+	- For every edge e with s(source) and d(destination) :
+		- get group for s and d (Using find operation of union find)
+		- if two groups are same exclude that edge(as it will form a cycle)
+		-if two groups are different merge two groups (make union operation of union find ds)and add edge to final graph
+
 
 Milestone 2 : Implement Kruskal's algorithm
 
@@ -27,3 +40,62 @@ Algorithm : (undirected graph)
 			- In Union-Find if two vertex exists in same group(cycle exists)
 		- If No cycles exists 
 			- Union two groups.
+
+Milestone 3 : Maximum weight independent set(Only for path graph) :-
+	Problem Definition :
+		To find the nodes with maximum weight such that no node share an edge with other node.
+
+	Approach to be used is Dynamic Programming
+	Step 1 : 
+		Structure of subproblems : If a vertex is selected no neighbors of that vertext will be selected, which leave us 2 possibilities at every node 
+			a. If a node is selected.
+			b. If the node is not selected.
+	Step 2 :
+		Principle Of Optimality : There are only two possiblities for every vertex either it is included in set or not. So that depending on the case we can calculate the maximum weight so far by using these two cases recursively to ultimately reach a solution.
+	Step 3 :
+		Bottom-Up approach : Start solving the problem with 0 vertex in set and iterate over all vertices to find maximum weight of independent set.
+	Step 4 :
+		Reconstruction : To get all the vertices in the set with given maximum weight. Iterate backwards on the cache (an array use d to store the maximum weight of particular set.)
+	Milestone 3.1 :
+		Data Structures to be used :
+			Use an array m for storing results of previous computation.
+			A graph using Graph.h.(Generate a path graph)
+		Algorithm for calculating maximum weight :
+		Iterate over all the vertices :
+			m[i]=max{w[i]+m[i-2],m[i-1]}
+	Milestone 3.2 : 
+		Reconstruction :
+			if current vertex weight + i-2 weight is greater than m[i-1] then current vertex is included otherwise it is excluded.
+
+Milestone 4 : Knapsack Problem 
+
+	Here a subproblem is :
+		v(i,x) : which represents the optimal value when 
+			i) when only first i items are selected
+			ii) max weight is x
+	DS : 
+		1) vector of pairs to maintain value vs weight graph of each item.
+		2) 2-d array to maintain the values of smaller subproblems
+		(Items selected and residual knapsack capacity.)
+	Step 1 : 
+		Initialize the vector with the given values and weights
+	Step 2 :
+		Iterate over all the items
+			for each item i calculate it's max weight for either the item is selected or not.
+			This is the value max(v(i-1,x),v(i)+v(i-1,x-w(i))
+
+	Step 3 : 
+		Reconstruction :
+			Use the exclusion condition as the fix. 
+
+Milestone 5 : Sequence Alignment
+	I/p : 
+		Two Strings, And Penalty for a gap and a mismatch.
+	DS :
+		A 2-D array to maintain the penalty when the i letters from first string and j letters from string selected.
+	Steps : 
+		1) Get two input strings
+		2) Get every character from each string and perform the 		operations
+		3) Maintain the 2-D array for penalty of each combination of characters.
+	Reconstruction : 
+		Reconstruct the solution by checking the values in the 2-D array.

@@ -37,6 +37,7 @@ public:
     void set_edge_value(int,int,int);
     void print_graph();
     void get_all_edges(int **);
+    Graph* getGraphSortedByEdgeLengths();
 };
 
 

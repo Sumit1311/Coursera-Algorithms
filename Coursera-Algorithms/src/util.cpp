@@ -53,3 +53,8 @@ void read_data_from_file(char * file_name, int content[][3]) {
     }
 
 }
+
+
+int getMaxOfTwo(int a,int b) {
+    return a>b ? a:b;
+}

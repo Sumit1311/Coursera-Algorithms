@@ -44,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -76,6 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -98,7 +101,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,14 +112,62 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 <div class="contents">
 &#160;<ul>
+<li>data
+: <a class="el" href="struct_node.html#a667e56be552f1fdbb48f972f54e5f6fc">Node</a>
+, <a class="el" href="classtree__node__.html#a4c15077a3ad0552413d1268ee4be1bef">tree_node_&lt; T &gt;</a>
+</li>
 <li>edge_value
 : <a class="el" href="classadjacent__node.html#a7bcecd665b2987102684948219eb3937">adjacent_node</a>
+</li>
+<li>feet
+: <a class="el" href="classtree.html#ae1dbb80115ba483e37d081a2256c239b">tree&lt; T, tree_node_allocator &gt;</a>
+</li>
+<li>first_child
+: <a class="el" href="classtree__node__.html#a53d081ce19bc428cef647b59ec1f0689">tree_node_&lt; T &gt;</a>
+</li>
+<li>head
+: <a class="el" href="classtree.html#a95a5503db9f7a428248a0b31afd95b38">tree&lt; T, tree_node_allocator &gt;</a>
+</li>
+<li>last_child
+: <a class="el" href="classtree__node__.html#ab0b558bd2b127d39399c1ecdc071d5c2">tree_node_&lt; T &gt;</a>
+</li>
+<li>left_child
+: <a class="el" href="struct_node.html#acf3cd737cb5f80f52e2a4b33b5a67bd2">Node</a>
 </li>
 <li>n
 : <a class="el" href="classadjacent__node.html#acd8606353d1a0e7899a85d3c230cb0cb">adjacent_node</a>
 </li>
 <li>next
 : <a class="el" href="classadjacent__node.html#a9abe5bc5353485a2ea0887d563f3030e">adjacent_node</a>
+</li>
+<li>next_sibling
+: <a class="el" href="classtree__node__.html#ac3903bfe96a9bdb62c88fa985c5fe82a">tree_node_&lt; T &gt;</a>
+</li>
+<li>node
+: <a class="el" href="classtree_1_1iterator__base.html#abd9aea845f1314b034e39ef5ab88c5d3">tree&lt; T, tree_node_allocator &gt;::iterator_base</a>
+</li>
+<li>parent
+: <a class="el" href="structgroup.html#a06786802df3709d049c8e60eac5101b1">group</a>
+, <a class="el" href="classtree__node__.html#a4439effbb039dea56d2e35be1b809cde">tree_node_&lt; T &gt;</a>
+</li>
+<li>parent_
+: <a class="el" href="classtree_1_1children__iterator.html#a9ae08979c34741fabbeece8cfb6db420">tree&lt; T, tree_node_allocator &gt;::children_iterator</a>
+, <a class="el" href="classtree_1_1sibling__iterator.html#a204f7449ee908f982d21cc3d334d25bc">tree&lt; T, tree_node_allocator &gt;::sibling_iterator</a>
+</li>
+<li>prev_sibling
+: <a class="el" href="classtree__node__.html#a87ca6b1bd1e14cb83a69f5c8eae7dba3">tree_node_&lt; T &gt;</a>
+</li>
+<li>right_child
+: <a class="el" href="struct_node.html#a5d6c60ad78dccb3e8492bc962a4dbac4">Node</a>
+</li>
+<li>size
+: <a class="el" href="structgroup.html#a1439c21697f3001e80319a66176fc450">group</a>
+</li>
+<li>skip_current_children_
+: <a class="el" href="classtree_1_1iterator__base.html#a88239267268c728952e0cd89b9326e82">tree&lt; T, tree_node_allocator &gt;::iterator_base</a>
+</li>
+<li>top_node
+: <a class="el" href="classtree_1_1fixed__depth__iterator.html#ad4d9aeaa814a8e021ff2168bf1561f5a">tree&lt; T, tree_node_allocator &gt;::fixed_depth_iterator</a>
 </li>
 <li>value
 : <a class="el" href="classnode.html#a1df258d4663fc36cfd0d5d93588aa21f">node</a>
@@ -127,7 +178,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 06:23:48 for Coursera-Algorithms by
+    <li class="footer">Generated on Wed Jun 24 2015 12:37:29 for Coursera-Algorithms by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

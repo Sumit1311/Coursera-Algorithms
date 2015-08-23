@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['value',['value',['../classnode.html#a1df258d4663fc36cfd0d5d93588aa21f',1,'node']]]
+  ['feet',['feet',['../classtree.html#ae1dbb80115ba483e37d081a2256c239b',1,'tree']]],
+  ['first_5fchild',['first_child',['../classtree__node__.html#a53d081ce19bc428cef647b59ec1f0689',1,'tree_node_']]]
 ];

@@ -1,0 +1,925 @@
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2136: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2142: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const
+Possible candidates:
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2148: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const
+Possible candidates:
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2154: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const tree::post_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 151 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 154 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 150 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2161: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const tree::post_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 150 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 153 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 149 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2168: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const tree::pre_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 131 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 138 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 134 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2175: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const tree::pre_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 130 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 137 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 133 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2196: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const tree::leaf_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 238 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 211 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 207 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2203: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const tree::leaf_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 237 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 210 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 206 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2241: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const
+Possible candidates:
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 112 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 123 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 119 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2265: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2271: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const tree::iterator_base &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2277: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const tree::sibling_iterator &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2351: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int num)
+Possible candidates:
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 136 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 143 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 139 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2361: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int num)
+Possible candidates:
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 137 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 144 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 140 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2381: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2387: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const tree::iterator_base &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2393: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const tree::sibling_iterator &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2461: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int num)
+Possible candidates:
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 156 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 159 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 155 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2471: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int num)
+Possible candidates:
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 157 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 160 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 156 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2498: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2505: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(const tree::iterator_base &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2512: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const tree::breadth_first_queued_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 171 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 173 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 169 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2519: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const tree::breadth_first_queued_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 170 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 172 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 168 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2553: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int num)
+Possible candidates:
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 174 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 176 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 172 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2573: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator()
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(tree_node *)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const fixed_depth_iterator &)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2579: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const tree::iterator_base &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator()
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(tree_node *)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const fixed_depth_iterator &)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2585: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const tree::sibling_iterator &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator()
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(tree_node *)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const fixed_depth_iterator &)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2591: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const tree::fixed_depth_iterator &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator()
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(tree_node *)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::fixed_depth_iterator::fixed_depth_iterator(const fixed_depth_iterator &)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2759: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator()
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(tree_node *)
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const iterator_base &)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2766: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const tree::iterator_base &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator()
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(tree_node *)
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const iterator_base &)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2773: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const tree::sibling_iterator &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator()
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(tree_node *)
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::sibling_iterator::sibling_iterator(const iterator_base &)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2864: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node_< T > *tn, tree_node_< T > *top)
+Possible candidates:
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2870: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const tree::iterator_base &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2876: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const tree::sibling_iterator &other)
+Possible candidates:
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2942: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int num)
+Possible candidates:
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 243 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 216 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 212 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh:2952: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int num)
+Possible candidates:
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 244 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 217 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 213 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1046: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1052: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const
+Possible candidates:
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1058: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const
+Possible candidates:
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1064: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const tree::post_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 151 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 154 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 150 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1071: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const tree::post_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 150 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 153 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 149 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1078: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const tree::pre_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 131 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 138 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 134 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1085: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const tree::pre_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 130 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 137 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 133 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1092: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::children_iterator::operator!=(const tree::children_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::children_iterator::operator!=(const children_iterator &) const ' at line 189 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::children_iterator::operator!=(const children_iterator &) const ' at line 185 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1099: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::children_iterator::operator==(const tree::children_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::children_iterator::operator==(const children_iterator &) const ' at line 188 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::children_iterator::operator==(const children_iterator &) const ' at line 184 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1106: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const tree::leaf_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 238 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 211 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 207 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1113: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const tree::leaf_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 237 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 210 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 206 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1120: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator tree< T, tree_node_allocator >::iterator_base::begin_children_iterator() const
+Possible candidates:
+  children_iterator tree< T, tree_node_allocator >::iterator_base::begin_children_iterator() const ' at line 125 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator tree< T, tree_node_allocator >::iterator_base::begin_children_iterator() const ' at line 121 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1131: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator tree< T, tree_node_allocator >::iterator_base::end_children_iterator() const
+Possible candidates:
+  children_iterator tree< T, tree_node_allocator >::iterator_base::end_children_iterator() const ' at line 126 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator tree< T, tree_node_allocator >::iterator_base::end_children_iterator() const ' at line 122 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1139: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const
+Possible candidates:
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 112 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 123 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 119 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1163: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1220: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int num)
+Possible candidates:
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 136 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 143 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 139 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1230: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int num)
+Possible candidates:
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 137 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 144 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 140 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1250: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1304: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int num)
+Possible candidates:
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 156 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 159 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 155 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1314: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int num)
+Possible candidates:
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 157 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 160 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 156 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1341: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1348: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const tree::breadth_first_queued_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 171 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 173 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 169 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1355: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const tree::breadth_first_queued_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 170 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 172 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 168 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1389: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int num)
+Possible candidates:
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 174 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 176 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 172 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1408: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator::children_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::children_iterator::children_iterator()
+  tree< T, tree_node_allocator >::children_iterator::children_iterator(tree_node *)
+  tree< T, tree_node_allocator >::children_iterator::children_iterator()
+  tree< T, tree_node_allocator >::children_iterator::children_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1459: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator & tree< T, tree_node_allocator >::children_iterator::operator+=(unsigned int num)
+Possible candidates:
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator+=(unsigned int)' at line 194 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator+=(unsigned int)' at line 190 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1469: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator & tree< T, tree_node_allocator >::children_iterator::operator-=(unsigned int num)
+Possible candidates:
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator-=(unsigned int)' at line 195 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator-=(unsigned int)' at line 191 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1479: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::tree_node * tree< T, tree_node_allocator >::children_iterator::range_first() const
+Possible candidates:
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_first() const 
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_first() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1486: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::tree_node * tree< T, tree_node_allocator >::children_iterator::range_last() const
+Possible candidates:
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_last() const 
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_last() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1500: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node_< T > *tn, tree_node_< T > *top)
+Possible candidates:
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1560: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int num)
+Possible candidates:
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 243 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 216 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 212 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:1570: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int num)
+Possible candidates:
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 244 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 217 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 213 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1015: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+  tree< T, tree_node_allocator >::iterator_base::iterator_base()
+  tree< T, tree_node_allocator >::iterator_base::iterator_base(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1021: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const
+Possible candidates:
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+  T & tree< T, tree_node_allocator >::iterator_base::operator*() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1027: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const
+Possible candidates:
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+  T * tree< T, tree_node_allocator >::iterator_base::operator->() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1033: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const tree::post_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 151 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 154 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator!=(const post_order_iterator &) const ' at line 150 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1040: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const tree::post_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 150 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 153 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::post_order_iterator::operator==(const post_order_iterator &) const ' at line 149 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1047: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const tree::pre_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 131 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 138 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator!=(const pre_order_iterator &) const ' at line 134 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1054: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const tree::pre_order_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 130 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 137 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::pre_order_iterator::operator==(const pre_order_iterator &) const ' at line 133 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1061: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::children_iterator::operator!=(const tree::children_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::children_iterator::operator!=(const children_iterator &) const ' at line 189 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::children_iterator::operator!=(const children_iterator &) const ' at line 185 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1068: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::children_iterator::operator==(const tree::children_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::children_iterator::operator==(const children_iterator &) const ' at line 188 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::children_iterator::operator==(const children_iterator &) const ' at line 184 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1075: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const tree::leaf_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 238 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 211 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator!=(const leaf_iterator &) const ' at line 207 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1082: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const tree::leaf_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 237 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 210 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::leaf_iterator::operator==(const leaf_iterator &) const ' at line 206 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1090: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator tree< T, tree_node_allocator >::iterator_base::begin_children_iterator() const
+Possible candidates:
+  children_iterator tree< T, tree_node_allocator >::iterator_base::begin_children_iterator() const ' at line 125 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator tree< T, tree_node_allocator >::iterator_base::begin_children_iterator() const ' at line 121 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1101: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator tree< T, tree_node_allocator >::iterator_base::end_children_iterator() const
+Possible candidates:
+  children_iterator tree< T, tree_node_allocator >::iterator_base::end_children_iterator() const ' at line 126 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator tree< T, tree_node_allocator >::iterator_base::end_children_iterator() const ' at line 122 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1109: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const
+Possible candidates:
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 112 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 123 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  unsigned int tree< T, tree_node_allocator >::iterator_base::number_of_children() const ' at line 119 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1133: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator()
+  tree< T, tree_node_allocator >::pre_order_iterator::pre_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1194: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int num)
+Possible candidates:
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 136 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 143 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator+=(unsigned int)' at line 139 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1204: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int num)
+Possible candidates:
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 137 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 144 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  pre_order_iterator & tree< T, tree_node_allocator >::pre_order_iterator::operator-=(unsigned int)' at line 140 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1224: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator()
+  tree< T, tree_node_allocator >::post_order_iterator::post_order_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1284: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int num)
+Possible candidates:
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 156 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 159 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator+=(unsigned int)' at line 155 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1294: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int num)
+Possible candidates:
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 157 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 160 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  post_order_iterator & tree< T, tree_node_allocator >::post_order_iterator::operator-=(unsigned int)' at line 156 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1321: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator()
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator::breadth_first_queued_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1328: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const tree::breadth_first_queued_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 171 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 173 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator!=(const breadth_first_queued_iterator &) const ' at line 169 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1335: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const tree::breadth_first_queued_iterator &other) const
+Possible candidates:
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 170 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 172 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  bool tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator==(const breadth_first_queued_iterator &) const ' at line 168 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1369: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int num)
+Possible candidates:
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 174 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 176 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  breadth_first_queued_iterator & tree< T, tree_node_allocator >::breadth_first_queued_iterator::operator+=(unsigned int)' at line 172 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1388: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator::children_iterator(tree_node_< T > *tn)
+Possible candidates:
+  tree< T, tree_node_allocator >::children_iterator::children_iterator()
+  tree< T, tree_node_allocator >::children_iterator::children_iterator(tree_node *)
+  tree< T, tree_node_allocator >::children_iterator::children_iterator()
+  tree< T, tree_node_allocator >::children_iterator::children_iterator(tree_node *)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1439: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator & tree< T, tree_node_allocator >::children_iterator::operator+=(unsigned int num)
+Possible candidates:
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator+=(unsigned int)' at line 194 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator+=(unsigned int)' at line 190 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1449: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::children_iterator & tree< T, tree_node_allocator >::children_iterator::operator-=(unsigned int num)
+Possible candidates:
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator-=(unsigned int)' at line 195 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  children_iterator & tree< T, tree_node_allocator >::children_iterator::operator-=(unsigned int)' at line 191 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1459: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::tree_node * tree< T, tree_node_allocator >::children_iterator::range_first() const
+Possible candidates:
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_first() const 
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_first() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1466: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::tree_node * tree< T, tree_node_allocator >::children_iterator::range_last() const
+Possible candidates:
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_last() const 
+  tree_node * tree< T, tree_node_allocator >::children_iterator::range_last() const 
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1480: warning: no matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node_< T > *tn, tree_node_< T > *top)
+Possible candidates:
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const sibling_iterator &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(const iterator_base &)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top=0)
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator()
+  tree< T, tree_node_allocator >::leaf_iterator::leaf_iterator(tree_node *, tree_node *top)
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1541: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int num)
+Possible candidates:
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 243 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 216 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator+=(unsigned int)' at line 212 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp:1551: warning: no uniquely matching class member found for 
+  template < T, tree_node_allocator >
+  tree< T, tree_node_allocator >::leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int num)
+Possible candidates:
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 244 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/tree.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 217 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh
+  leaf_iterator & tree< T, tree_node_allocator >::leaf_iterator::operator-=(unsigned int)' at line 213 of file /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/simple_tree.hpp
+
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/xinlin.hh:21: warning: found more than one \mainpage comment block! Skipping this block.
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Graph_Clustering.cpp:20: warning: argument 'void' of command @param is not found in the argument list of compare1(const void *a, const void *b)
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/Graph_Clustering.cpp:20: warning: argument 'void' of command @param is not found in the argument list of compare1(const void *a, const void *b)
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp:45: warning: The following parameters of Graph::Graph(int number, int edges) are not documented:
+  parameter 'edges'
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp:283: warning: argument 'v2' of command @param is not found in the argument list of Graph::neighbors(int temp[], int v1, int n)
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp:283: warning: The following parameters of Graph::neighbors(int temp[], int v1, int n) are not documented:
+  parameter 'temp'
+  parameter 'n'
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp:185: warning: argument 'dest' of command @param is not found in the argument list of Graph::set_edge_value(int source, int destination, int v)
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp:185: warning: The following parameters of Graph::set_edge_value(int source, int destination, int v) are not documented:
+  parameter 'destination'
+  parameter 'v'
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp:250: warning: argument 'int' of command @param is not found in the argument list of Graph::set_node_value(int n, int v)
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp:152: warning: argument 'vector' of command @param is not found in the argument list of HuffmanCode::HuffmanCode(vector< string > symbols, vector< int > freq)
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp:152: warning: argument 'vector' of command @param is not found in the argument list of HuffmanCode::HuffmanCode(vector< string > symbols, vector< int > freq)
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp:152: warning: The following parameters of HuffmanCode::HuffmanCode(vector< string > symbols, vector< int > freq) are not documented:
+  parameter 'symbols'
+  parameter 'freq'
+/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/graph.cpp:23: warning: Found unknown command `\type'
