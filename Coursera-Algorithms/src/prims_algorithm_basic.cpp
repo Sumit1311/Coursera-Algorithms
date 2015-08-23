@@ -12,19 +12,6 @@ Graph g(NO_OF_VERTICES);
 Graph min_span_tree(NO_OF_VERTICES);
 bool explored[NO_OF_VERTICES];
 
-void read_data_from_file(char * file_name, int content[][3]) {
-    fstream file(file_name);
-    int a,b,c;
-    file>>a>>b;
-    int count=0;
-    while(file>>a>>b>>c) {
-        content[count][0]=a;
-        content[count][1]=b;
-        content[count][2]=c;
-        count++;
-    }
-
-}
 
 bool all_explored() {
     bool temp=explored[0];

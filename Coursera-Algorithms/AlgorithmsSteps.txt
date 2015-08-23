@@ -1,3 +1,4 @@
+
 Union-Find Data Structure : 
 
 Milestone 1 : Implement using individual points pointing to leader vertex
@@ -12,8 +13,17 @@ Find : return the value at given index
 Union : update the parent pointers of of the group with less no of members.
 
 
-Create a struct called Vertex :
-	Data members : value, parentPointer.
-Create a class named Group :
-	Data members : name, vectorOfVertices.
-	(Create a vector to maintain groups of vertices. All the vertices in the vector should have same parent vertex).
+Milestone 2 : Implement Kruskal's algorithm
+
+Data Structures : 
+	Use graph.h for storing graph and minimum spanning tree.
+	Use unionFind.h for detecting cycle.
+
+Algorithm : (undirected graph)
+	1. sort the nodes by their edge lengths.
+		- Use <algorithm> sort.(decreasing to increasing)
+	2. get a node from sorted edges.
+		- Detect if cycle exists. (Using UnionFind DS)
+			- In Union-Find if two vertex exists in same group(cycle exists)
+		- If No cycles exists 
+			- Union two groups.

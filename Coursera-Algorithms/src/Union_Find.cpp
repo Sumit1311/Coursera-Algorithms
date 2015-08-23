@@ -18,10 +18,10 @@ void Union_Find::unionVertices(int i,int j) {
     cout<<"Union ";
     int combinedParent,updateParent,currentSize,updatedCount=0;
     if(this->vertices[i].size >= this->vertices[j].size) {
-        updateParent=j;
+        updateParent=this->vertices[j].parent;
         combinedParent=this->vertices[i].parent;
     } else {
-        updateParent=i;
+        updateParent=this->vertices[i].parent;
         combinedParent=this->vertices[j].parent;
     }
     currentSize=this->vertices[combinedParent].size;
