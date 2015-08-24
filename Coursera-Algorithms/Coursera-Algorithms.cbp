@@ -5,7 +5,7 @@
 		<Option title="Coursera-Algorithms" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="src/;" />
+		<Option virtualFolders="src/;include/test/;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/Coursera-Algorithms" prefix_auto="1" extension_auto="1" />
@@ -55,6 +55,7 @@
 		<Unit filename="include/test/knapsackTest.h" />
 		<Unit filename="include/test/kruskal_algorithm_test.h" />
 		<Unit filename="include/test/primtest.h" />
+		<Unit filename="include/test/sequenceAlignmentTest.h" />
 		<Unit filename="include/test/unionFind.h" />
 		<Unit filename="include/tree.hh" />
 		<Unit filename="include/tree_util.hh" />
@@ -62,6 +63,10 @@
 		<Unit filename="include/utils.h" />
 		<Unit filename="include/xinlin.hh" />
 		<Unit filename="main.cpp" />
+		<Unit filename="sequenceAlignmentTest.h">
+			<Option virtualFolder="include/test/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="src/Graph_Clustering.cpp" />
 		<Unit filename="src/KnapsackProblem.cpp" />
 		<Unit filename="src/Kruskal_Algorithm.cpp" />
@@ -83,6 +88,7 @@
 		<Unit filename="test/knapsackTest.cpp" />
 		<Unit filename="test/kruskal_test.cpp" />
 		<Unit filename="test/primtest.cpp" />
+		<Unit filename="test/sequenceAlignmentTest.cpp" />
 		<Unit filename="test/unionFind.cpp" />
 		<Extensions>
 			<code_completion />

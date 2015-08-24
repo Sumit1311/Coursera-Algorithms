@@ -1,5 +1,6 @@
 #include <iostream>
-#include "test/knapsackTest.h"
+#include "test/sequenceAlignmentTest.h"
+//#include "test/knapsackTest.h"
 //#include "test/graphtest.h"
 //#include "test/primtest.h"
 //#include "utils.h"
@@ -14,7 +15,8 @@ using namespace std;
 
 int main() {
     cout << "Hello world!" << endl;
-    run_knapsack_test();
+    run_sequence_alignment();
+    //run_knapsack_test();
     //run_max_weight_indep_set();
     //run_kruskal_test();
     //run_union_find();

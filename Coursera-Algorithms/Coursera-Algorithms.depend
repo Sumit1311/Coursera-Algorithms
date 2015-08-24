@@ -165,7 +165,7 @@
 1435117450 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/Graph_Clustering.h
 	"graph.h"
 
-1435555418 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
+1435720644 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/utils.h
 
 1435127780 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/huffman_code.cpp
 	<iostream>
@@ -224,7 +224,7 @@
 	"Union_Find.h"
 	<iostream>
 
-1435555421 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
+1435723249 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/util.cpp
 	"utils.h"
 	<iostream>
 	<fstream>
@@ -259,9 +259,9 @@
 1435117450 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/unionFind.cpp
 	"Union_Find.h"
 
-1435555371 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/main.cpp
+1435723820 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/main.cpp
 	<iostream>
-	"test/knapsackTest.h"
+	"test/sequenceAlignmentTest.h"
 
 1427694801 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/graphtest.h
 
@@ -302,4 +302,20 @@
 	"KnapsackProblem.h"
 
 1435554796 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/knapsackTest.h
+
+1435732889 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/src/SequenceAlignment.cpp
+	"SequenceAlignment.h"
+	"utils.h"
+
+1435730615 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/SequenceAlignment.h
+	<string>
+	<vector>
+	<iostream>
+
+1435732617 source:/home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/test/sequenceAlignmentTest.cpp
+	"test/sequenceAlignmentTest.h"
+	<string>
+	"SequenceAlignment.h"
+
+1435723442 /home/sumit/Documents/Github For Algorithms/Coursera-Algorithms/Coursera-Algorithms/include/test/sequenceAlignmentTest.h
 

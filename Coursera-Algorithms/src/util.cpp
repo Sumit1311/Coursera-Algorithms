@@ -40,3 +40,14 @@ void read_data_from_file(char * file_name, int content[][3]) {
 int getMaxOfTwo(int a,int b) {
     return a>b ? a:b;
 }
+
+int getMaxOfThree(int a,int b,int c){
+    if(a>b && a>c){
+        return a;
+    }else if(b>c){
+        return b;
+    }else{
+        return c;
+    }
+}
+
