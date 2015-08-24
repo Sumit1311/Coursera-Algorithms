@@ -68,6 +68,7 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="src/Graph_Clustering.cpp" />
+		<Unit filename="src/Kruskal_Algorithm.cpp" />
 		<Unit filename="src/KnapsackProblem.cpp" />
 		<Unit filename="src/Kruskal_Algorithm.cpp" />
 		<Unit filename="src/MaxWeightIndepSet.cpp" />

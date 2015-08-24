@@ -1,3 +1,4 @@
+
 Union-Find Data Structure : 
 
 Milestone 1 : Implement using individual points pointing to leader vertex
@@ -23,6 +24,22 @@ Milestone 2 : Kruskal's Algorithm :
 		- get group for s and d (Using find operation of union find)
 		- if two groups are same exclude that edge(as it will form a cycle)
 		-if two groups are different merge two groups (make union operation of union find ds)and add edge to final graph
+
+
+Milestone 2 : Implement Kruskal's algorithm
+
+Data Structures : 
+	Use graph.h for storing graph and minimum spanning tree.
+	Use unionFind.h for detecting cycle.
+
+Algorithm : (undirected graph)
+	1. sort the nodes by their edge lengths.
+		- Use <algorithm> sort.(decreasing to increasing)
+	2. get a node from sorted edges.
+		- Detect if cycle exists. (Using UnionFind DS)
+			- In Union-Find if two vertex exists in same group(cycle exists)
+		- If No cycles exists 
+			- Union two groups.
 
 Milestone 3 : Maximum weight independent set(Only for path graph) :-
 	Problem Definition :

@@ -5,6 +5,8 @@ void run_union_find(){
     uf.printAll();
     uf.unionVertices(0,4);
     uf.printAll();
-    uf.unionVertices(0,3);
+    uf.unionVertices(1,3);
+    uf.printAll();
+    uf.unionVertices(4,1);
     uf.printAll();
 }

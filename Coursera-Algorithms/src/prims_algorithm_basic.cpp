@@ -12,6 +12,7 @@ Graph g(NO_OF_VERTICES);
 Graph min_span_tree(NO_OF_VERTICES);
 bool explored[NO_OF_VERTICES];
 
+
 /** \brief Checks if all the vertices in graph explored.
  *
  * \return (bool).
