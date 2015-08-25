@@ -29,7 +29,8 @@
       <Title>Database Systems: The Complete Book</Title>
       <Remark>
          Amazon.com says: Buy this book bundled with
-         <BookRef book="ISBN-0-13-713526-2" /> - a great deal!
+         <BookRef book="ISBN-0-13-713526-2" />
+         <BookRef book="ISBN-0-13-815504-6"/>- a great deal!
       </Remark>
     </Book>
     <Author Ident="HG">
