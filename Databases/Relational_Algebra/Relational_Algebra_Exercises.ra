@@ -1,4 +1,16 @@
-1. ((\project_{name}(\select_{gender='female' AND age>20}Person)) \join Eats)
+1. \project_{pizza}((\project_{name}(\select_{gender='female' AND age>20}Person)) \join Eats)
 
 
 2. \project_{name}(\select_{pizzeria='Straw Hat'}((Eats \join (\project_{name}(\select_{gender='female'}Person))) \join Serves))
+
+3. \project_{pizzeria}((\select_{price < 10.0}Serves)\join(\select_{name='Amy' OR name='Fay'}Eats))
+
+4. \project_{pizzeria}(\select_{price<10.0}(Serves \join ((\project_{pizza}(\select_{name='Amy'}Eats)) \intersect (\project_{pizza}(\select_{name='Fay'}Eats)))))
+
+5. (\project_{name}((\select_{pizzeria='Dominos'}Serves)\join Eats)) \diff (\project_{name}(\select_{pizzeria='Dominos'}Frequents));
+
+6. (\select_{age<24}Person)\join (\select_{price<10.0}Serves)
+
+Query for highest or smallest of something using relational algebra: 
+
+7. \project_{age}Person \diff \project_{a1}(\rename_{n1,a1,g1}Person \join_{a1<a2} \rename_{n2,a2,g2}Person)
