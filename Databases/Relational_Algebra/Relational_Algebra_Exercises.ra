@@ -1,0 +1,4 @@
+1. ((\project_{name}(\select_{gender='female' AND age>20}Person)) \join Eats)
+
+
+2. \project_{name}(\select_{pizzeria='Straw Hat'}((Eats \join (\project_{name}(\select_{gender='female'}Person))) \join Serves))
