@@ -14,3 +14,28 @@
 Query for highest or smallest of something using relational algebra: 
 
 7. \project_{age}Person \diff \project_{a1}(\rename_{n1,a1,g1}Person \join_{a1<a2} \rename_{n2,a2,g2}Person)
+
+8. Find all pizzerias frequented by at least one person under the age of 18.
+	\project_{pizzeria}(Frequents \join (\select_{age>18}Person))
+
+9. Find the names of all females who eat either mushroom or pepperoni pizza 	(or both)
+	\project_{name}(\select_{pizza='mushroom' OR pizza='pepperoni'}(Eats \join (\select_{gender='female'}Person)))
+
+10. Find the names of all females who eat both mushroom and pepperoni pizza.
+	\project_{name}(\select_{pizza='mushroom' AND gender='female'}(Eats \join Person)) \intersect \project_{name}(\select_{pizza='pepperoni' AND gender='female'}(Eats \join Person))
+
+11. Find all pizzerias that serve at least one pizza that Amy eats for less 	than $10.00
+	\project_{pizzeria}(\select_{name='Amy' AND price<10.0}(Serves \join Eats \join Person))
+
+12. Find all pizzerias that are frequented by only females or only males.
+
+	(\project_{pizzeria}(\select_{gender='female'}(Person \join Frequents)) \diff (\project_{pizzeria}(\select_{gender='male'}(Person \join Frequents)))) \union (\project_{pizzeria}(\select_{gender='male'}(Person \join Frequents)) \diff (\project_{pizzeria}(\select_{gender='female'}(Person \join Frequents))))
+
+13. For each person, find all pizzas the person eats that are not served by any pizzeria the person frequents. Return all such person (name) / pizza pairs
+	(\project_{name,pizza}(Eats \join Person)) \diff (\project_{name,pizza}(Serves \join (\project_{name,pizzeria}(Person \join Frequents))))
+
+14. Find the names of all people who frequent only pizzerias serving at 		least one pizza they eat.
+	\project_{name}Person-\project_{name}(Frequent-(\project_{name,pizzeria}(Eats \join Serves)))
+
+15. Find the names of all people who frequent every pizzerias serving at 		least one pizza they eat.
+	\project_{name}((\project_{name,pizzeria}Frequents) \intersect (\project_{name,pizzeria}(Eats \join Serves)))
