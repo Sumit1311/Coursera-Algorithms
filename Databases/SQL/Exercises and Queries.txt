@@ -56,9 +56,9 @@ insert into Rating values(208, 104, 3, '2011-01-02');
 
 3. Find the titles of all movies that have no ratings. 
 	select title
-	from movie natural join rating
-	where ratingDate is null;
-
+	from movie left outer join rating 
+	on movie.mID = rating.mID
+	where stars is null
 4. Some reviewers didn't provide a date with their rating. Find the names 	   of all reviewers who have ratings with a NULL value for the date. 
 	select reviewer.name
 	from movie natural join rating natural join reviewer
@@ -69,7 +69,104 @@ insert into Rating values(208, 104, 3, '2011-01-02');
 	from movie natural join rating natural join reviewer
 	order by name,title,stars
 
-6. For all cases where the same reviewer rated the same movie twice and 		gave it a higher rating the second time, return the reviewer's name and 	the title of the movie. 
+6. For all cases where the same reviewer rated the same movie twice and  	gave it a higher rating the second time, return the reviewer's name
+	and the title of the movie. 
 	select name,title
-	from movie natural join rating r1 natural join reviewer
-	where 
+	from (select r1.rID,r1.mID from rating r1,rating r2 where r1.mID = r2.mID AND r1.rID = r2.rID AND r1.stars < r2.stars AND r1.ratingDate < r2.ratingDate) v1 natural join reviewer natural join movie;
+
+7. For each movie that has at least one rating, find the highest number 	of stars that movie received. Return the movie title and number of 		stars. Sort by movie title. 
+	select title,mstars
+	from (select mID,max(stars) as mstars
+	from movie natural join rating
+	group by mID) m natural join movie
+	order by title
+
+8. List movie titles and average ratings, from highest-rated to lowest-		rated. If two or more movies have the same average rating, list them 	in alphabetical order.
+	select title,astars
+	from (select mID,avg(stars) as astars
+	from movie natural join rating
+	group by mID) m natural join movie
+	order by astars desc,title
+
+ * 9. Find the names of all reviewers who have contributed three or more 		ratings. (As an extra challenge, try writing the query without HAVING 	or without COUNT.) 
+	select name
+	from(select rID
+		from rating
+		group by rID
+		having count(mID) >=3) m natural join reviewer;
+
+	select distinct name
+	from (reviewer natural join rating ) r
+	where 3 <= (select count(r1.rID)
+				from rating r1
+				where r.rID = r1.rID)
+
+
+10. For each movie, return the title and the 'rating spread', that is, the difference between highest and lowest ratings given to that movie. Sort by rating spread from highest to lowest, then by movie title. 
+
+
+select title,spread
+from (select mID, (max(stars) - min(stars)) as spread
+from movie natural join rating
+group by mID) m join movie using(mID);
+
+11. Find the difference between the average rating of movies released before 1980 and the average rating of movies released after 1980. (Make sure to calculate the average rating for each movie, then the average of those averages for movies before 1980 and movies after. Don't just calculate the overall average rating before and after 1980.) 
+
+select distinct  ((select avg(mavg)
+from ((select mID,avg(stars) as mavg
+from rating
+group by mID) m natural join movie) am
+where year < 1980) - 
+(select avg(mavg)
+from ((select mID,avg(stars) as mavg
+from rating
+group by mID) m natural join movie) am
+where year > 1980)) as difference
+from movie;
+
+12. Some directors directed more than one movie. For all such directors, return the titles of all movies directed by them, along with the director name. Sort by director name, then movie title. (As an extra challenge, try writing the query both with and without COUNT.) 
+
+select director,title
+from (select director
+from movie
+group by director
+having count(mID) > 1) m join movie using(director)
+
+* 13. Find the movie(s) with the highest average rating. Return the movie title(s) and average rating. (Hint: This query is more difficult to write in SQLite than other systems; you might think of it as finding the highest average rating and then choosing the movie(s) with that average rating.)
+
+
+select title
+from (
+(select mID, avg(stars) as mavg
+from movie natural join rating
+group by mID) m join movie using(mID))
+where m.mavg >= (select max(m1.mavg)
+from (select mID, avg(stars) as mavg
+from movie natural join rating
+group by mID) m1);
+
+* 14. Find the movie(s) with the lowest average rating. Return the movie title(s) and average rating. (Hint: This query may be more difficult to write in SQLite than other systems; you might think of it as finding the lowest average rating and then choosing the movie(s) with that average rating.) 
+
+select title
+from (
+(select mID, avg(stars) as mavg
+from movie natural join rating
+group by mID) m join movie using(mID))
+where m.mavg <= (select min(m1.mavg)
+from (select mID, avg(stars) as mavg
+from movie natural join rating
+group by mID) m1);
+
+* 15. For each director, return the director's name together with the title(s) of the movie(s) they directed that received the highest rating among all of their movies, and the value of that rating. Ignore movies whose director is NULL. 
+
+	select distinct title,director
+	from (select director, max(stars) as maxstars
+	from movie natural join rating
+	where director is not null
+	group by director) m join movie using(director) natural join rating
+	where m.maxstars = stars
+
+
+
+
+	 

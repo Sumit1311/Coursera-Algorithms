@@ -9,23 +9,29 @@
 
 5. (\project_{name}((\select_{pizzeria='Dominos'}Serves)\join Eats)) \diff (\project_{name}(\select_{pizzeria='Dominos'}Frequents));
 
-6. (\select_{age<24}Person)\join (\select_{price<10.0}Serves)
+6. Find all pizzas that are eaten only by people younger than 24, or that cost less than 	$10 everywhere they're served. 
+	(\select_{age<24}Person)\join (\select_{price<10.0}Serves)
 
 Query for highest or smallest of something using relational algebra: 
 
 
-7. \project_{age}(Person \join (\select_{pizza='mushroom'}Eats)) \diff \project_{a1}(\rename_{a1}(\project_{age} (Person \join (\select_{pizza='mushroom'}Eats))) \join_{a1<a2} \rename_{a2}(\project_{age} (Person \join (\select_{pizza='mushroom'}Eats))))
+7.Find the age of the oldest person (or people) who eat mushroom pizza.  
+\project_{age}(Person \join (\select_{pizza='mushroom'}Eats)) \diff \project_{a1}(\rename_{a1}(\project_{age} (Person \join (\select_{pizza='mushroom'}Eats))) \join_{a1<a2} \rename_{a2}(\project_{age} (Person \join (\select_{pizza='mushroom'}Eats))))
 
 8. \project_{pizzeria} (Serves \join (Eats \join (\project_{name}(\select_{age>30}Person))))
 
-9. \project_{pizzeria}Serves \diff (\project_{pizzeria}(Serves \join (\project_{pizza}(Serves) \diff (\project_{pizza}(Eats \join (\project_{name}(\select_{age>30}Person)))))))
+9.  Find all pizzerias that serve only pizzas eaten by people over 30 
+\project_{pizzeria}Serves \diff (\project_{pizzeria}(Serves \join (\project_{pizza}(Serves) \diff (\project_{pizza}(Eats \join (\project_{name}(\select_{age>30}Person)))))))
 
-10. (\project_{pizzeria}(Serves)) \diff (\project_{pizzeria}(((\project_{pizzeria}(Serves)) \cross (\project_{pizza}(\select_{age > 30}(Person \join Eats)))) \diff ((\project_{pizzeria,pizza}(Serves)))))
+\project_{pizzeria}Serves \diff (\project_{pizzeria}(\project_{pizza,pizzeria}Serves \diff (\project_{pizza,pizzeria}((Eats \join (\select_{age>30}Person)) \join Serves))))
 
-7. \project_{age}Person \diff \project_{a1}(\rename_{n1,a1,g1}Person \join_{a1<a2} \rename_{n2,a2,g2}Person)
+10. Find all pizzerias that serve every pizza eaten by people over 30
+(\project_{pizzeria}Serves) \diff (\project_{pizzeria}(((\project_{pizzeria}Serves) \cross \project_{pizza}(Eats \join (\select_{age>30}Person))) \diff (\project_{pizzeria,pizza}Serves)))
+
+11. \project_{age}Person \diff \project_{a1}(\rename_{n1,a1,g1}Person \join_{a1<a2} \rename_{n2,a2,g2}Person)
 
 8. Find all pizzerias frequented by at least one person under the age of 18.
-	\project_{pizzeria}(Frequents \join (\select_{age>18}Person))
+	\project_{pizzeria}(Frequents \join (\select_{age<18}Person))
 
 9. Find the names of all females who eat either mushroom or pepperoni pizza 	(or both)
 	\project_{name}(\select_{pizza='mushroom' OR pizza='pepperoni'}(Eats \join (\select_{gender='female'}Person)))
@@ -40,12 +46,12 @@ Query for highest or smallest of something using relational algebra:
 
 	(\project_{pizzeria}(\select_{gender='female'}(Person \join Frequents)) \diff (\project_{pizzeria}(\select_{gender='male'}(Person \join Frequents)))) \union (\project_{pizzeria}(\select_{gender='male'}(Person \join Frequents)) \diff (\project_{pizzeria}(\select_{gender='female'}(Person \join Frequents))))
 
-13. For each person, find all pizzas the person eats that are not served by any pizzeria the person frequents. Return all such person (name) / pizza pairs
+13. For each person, find all pizzas the person eats that are not served by any pizzeria 	 the person frequents. Return all such person (name) / pizza pairs
 	(\project_{name,pizza}(Eats \join Person)) \diff (\project_{name,pizza}(Serves \join (\project_{name,pizzeria}(Person \join Frequents))))
-
-14. Find the names of all people who frequent only pizzerias serving at 		least one pizza they eat.
+(every and only)
+* 14. Find the names of all people who frequent only pizzerias serving at least one pizza they eat.
 	\project_{name}Person-\project_{name}(Frequent-(\project_{name,pizzeria}(Eats \join Serves)))
 
-15. Find the names of all people who frequent every pizzerias serving at 		least one pizza they eat.
+* 15. Find the names of all people who frequent every pizzerias serving at 		least one pizza they eat.
 	\project_{name}((\project_{name,pizzeria}Frequents) \intersect (\project_{name,pizzeria}(Eats \join Serves)))
 
