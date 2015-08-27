@@ -13,6 +13,15 @@
 
 Query for highest or smallest of something using relational algebra: 
 
+
+7. \project_{age}(Person \join (\select_{pizza='mushroom'}Eats)) \diff \project_{a1}(\rename_{a1}(\project_{age} (Person \join (\select_{pizza='mushroom'}Eats))) \join_{a1<a2} \rename_{a2}(\project_{age} (Person \join (\select_{pizza='mushroom'}Eats))))
+
+8. \project_{pizzeria} (Serves \join (Eats \join (\project_{name}(\select_{age>30}Person))))
+
+9. \project_{pizzeria}Serves \diff (\project_{pizzeria}(Serves \join (\project_{pizza}(Serves) \diff (\project_{pizza}(Eats \join (\project_{name}(\select_{age>30}Person)))))))
+
+10. (\project_{pizzeria}(Serves)) \diff (\project_{pizzeria}(((\project_{pizzeria}(Serves)) \cross (\project_{pizza}(\select_{age > 30}(Person \join Eats)))) \diff ((\project_{pizzeria,pizza}(Serves)))))
+
 7. \project_{age}Person \diff \project_{a1}(\rename_{n1,a1,g1}Person \join_{a1<a2} \rename_{n2,a2,g2}Person)
 
 8. Find all pizzerias frequented by at least one person under the age of 18.
@@ -39,3 +48,4 @@ Query for highest or smallest of something using relational algebra:
 
 15. Find the names of all people who frequent every pizzerias serving at 		least one pizza they eat.
 	\project_{name}((\project_{name,pizzeria}Frequents) \intersect (\project_{name,pizzeria}(Eats \join Serves)))
+
