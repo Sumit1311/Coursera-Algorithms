@@ -166,6 +166,8 @@ group by mID) m1);
 	group by director) m join movie using(director) natural join rating
 	where m.maxstars = stars
 
+16. 
+
 
 
 
